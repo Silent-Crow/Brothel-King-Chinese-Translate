@@ -856,7 +856,7 @@ translate schinese jobs_introduction_3226f923:
 translate schinese jobs_introduction_4436f236:
 
     # sill "The {b}tavern{/b} will allow you to train your girl as a {b}waitress{/b}. With time, they will start wearing sexy uniforms and providing all kinds of 'entertainment' to the customers."
-    sill "{b}零点酒吧{/b}可以让女孩们作为{b}女服务生{/b}给客人端茶送酒。随着等级提高,她们的制服会越来越暴露、性感,客人可以在她们服务的时候随便揩油。"
+    sill "{b}夜色酒廊{/b}可以让女孩们作为{b}女服务生{/b}给客人端茶送酒。随着等级提高,她们的制服会越来越暴露、性感,客人可以在她们服务的时候随便揩油。"
 
 # game/BKhelp.rpy:1232
 translate schinese jobs_introduction_602834d7:
@@ -880,7 +880,7 @@ translate schinese jobs_introduction_f0f985d0:
 translate schinese jobs_introduction_284e0e40:
 
     # sill "The {b}onsen{/b} will allow you to train her as a {b}masseuse{/b}. With time, they will provide more erotic massages to the customers, and eventually give them 'full service'"
-    sill "{b}露天温泉{/b}可以让女孩们作为{b}按摩技师{/b}为客人提供按摩服务。随着等级提高,她们会给客户提供更多部位的按摩,最终提供全套服务。"
+    sill "{b}花雾汤泉{/b}可以让女孩们作为{b}按摩技师{/b}为客人提供按摩服务。随着等级提高,她们会给客户提供更多部位的按摩,最终提供全套服务。"
 
 # game/BKhelp.rpy:1248
 translate schinese jobs_introduction_80db185e:
@@ -892,7 +892,7 @@ translate schinese jobs_introduction_80db185e:
 translate schinese jobs_introduction_26ccde83:
 
     # sill "The {b}okiya{/b} will allow you to train her as a {b}geisha{/b}. With time, they'll learn a thousand ways to please their customers, and how to take care of their more 'special' requests."
-    sill "{b}艺妓置屋{/b}可以让女孩们作为{b}表演艺妓{/b}在这里表演才艺。随着等级提高,她们将学会各种各样取悦客户的方式,以及如何应付他们的‘特殊’要求。"
+    sill "{b}艺苑戏台{/b}可以让女孩们作为{b}表演艺妓{/b}在这里表演才艺。随着等级提高,她们将学会各种各样取悦客户的方式,以及如何应付他们的‘特殊’要求。"
 
 # game/BKhelp.rpy:1256
 translate schinese jobs_introduction_5374094c:

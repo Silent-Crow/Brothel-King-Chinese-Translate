@@ -528,8 +528,8 @@ init -3 python:
 
     license_dict = {
                     0 : ("无证经营", "missing license.webp"),
-                    1 : ("青楼执照", "license1.webp"),
-                    2 : ("红灯区执照", "license2.webp"),
+                    1 : ("红灯区执照", "license1.webp"),
+                    2 : ("青楼执照", "license2.webp"),
                     3 : ("王室许可证", "license3.webp")
                 }
 

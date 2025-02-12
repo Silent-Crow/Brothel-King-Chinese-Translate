@@ -8523,11 +8523,11 @@ translate schinese strings:
 
     # game/BKevents.rpy:756
     old "A bath house"
-    new "露天温泉"
+    new "花雾汤泉"
 
     # game/BKevents.rpy:756
     old "An okiya (geisha house)"
-    new "艺妓置屋"
+    new "艺苑戏台"
 
     # game/BKevents.rpy:828
     old "At the end of Chapter 1, which faction did you side with?"

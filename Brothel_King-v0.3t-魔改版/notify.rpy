@@ -57,7 +57,7 @@ init python:
                 notify_history = notify_history[-notify_history_length:]
 
     def notify(txt="", pic="", col=notify_color, debug_txt="", priority=False):
-
+        return
         if isinstance(pic, Picture): # Specific for BK, intercepts Picture objects here to make it uncomplicated to invoke
             pic = pic.path
 

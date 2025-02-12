@@ -3184,7 +3184,7 @@ translate schinese brothel_first_time_075a1f1b:
 translate schinese brothel_first_time_8feddac2:
 
     # gio "The {b}tavern{/b} will allow you to train your girls as {b}waitresses{/b}."
-    gio "{b}零点酒吧{/b}：女孩们将作为{b}女服务员{/b}在这里服务客人。"
+    gio "{b}夜色酒廊{/b}：女孩们将作为{b}女服务员{/b}在这里服务客人。"
 
 # game/BKintro.rpy:2100
 translate schinese brothel_first_time_933948e2:
@@ -3220,7 +3220,7 @@ translate schinese brothel_first_time_a08bb573:
 translate schinese brothel_first_time_dfa62532:
 
     # gio "The {b}onsen{/b} will allow you to train girls as {b}masseuses{/b}."
-    gio "{b}露天温泉{/b}：女孩们将作为{b}按摩技师{/b}为客人按摩，正骨。"
+    gio "{b}花雾汤泉{/b}：女孩们将作为{b}按摩技师{/b}为客人按摩，正骨。"
 
 # game/BKintro.rpy:2119
 translate schinese brothel_first_time_e270038c:
@@ -3238,7 +3238,7 @@ translate schinese brothel_first_time_03bf0d24:
 translate schinese brothel_first_time_b17ae063:
 
     # gio "The {b}okiya{/b} will allow you to train girls as {b}geishas{/b}."
-    gio "{b}艺妓置屋{/b}：女孩们将作为{b}表演艺伎{/b}在众人面前表演茶艺、传统表演。"
+    gio "{b}艺苑戏台{/b}：女孩们将作为{b}表演艺伎{/b}在众人面前表演茶艺、传统表演。"
 
 # game/BKintro.rpy:2128
 translate schinese brothel_first_time_9c8cc9ab:
