@@ -489,7 +489,7 @@ init -2 python:
             # Returns the list of spent mojo points (for possible refund)
 
             if not self.has_mojo(cost_list, use_purple=use_purple):
-                raise AssertionError("MC mojo is insufficient (%s vs %s)" % (self.mojo, cost_list))
+                raise AssertionError("主角的咒力不足 (%s vs %s)" % (self.mojo, cost_list))
                 return False
 
             spent_list = []
@@ -632,7 +632,7 @@ init -2 python:
                         break
 
             if not self.pics:
-                raise AssertionError("No picture found for the Main Character. Check the game/MC folder.")
+                raise AssertionError("没有检测到主角立绘图片。 请检查 game/MC 文件夹。")
             else:
                 self.current_pic = self.pics[idx]
 
@@ -2092,7 +2092,7 @@ init -2 python:
             # Sanity check
 
             if not girls:
-                raise AssertionError("Customer could not find girls to choose from. (%s)" % and_text([g.name for g in girls]))
+                raise AssertionError("顾客找不到可供选择的女孩。 (%s)" % and_text([g.name for g in girls]))
 
 #             girls = [g for g in girls if g.does_anything()]
 
@@ -3852,7 +3852,7 @@ init -2 python:
             # Instant positive/negative fixation gain
             elif self.target.endswith(" fixation"):
                 if not self.value:
-                    raise AssertionError("Did not provide value for %s" % self.target)
+                    raise AssertionError("没有赋值给 %s" % self.target)
                 if self.value in fix_dict.keys():
                     c = thing.add_random_fixation(fixation=self.value, type=self.target[:3])[0] # because add_random_fixation returns a list
                 else:
@@ -5016,7 +5016,7 @@ init -2 python:
                         return (False, "你的女孩并不满足任务的需求。")
                 return (True, __("Send %s on this assignment.") % girl.fullname)
 
-            raise AssertionError("Something is weird with " + self.type)
+            raise AssertionError(self.type + "有点奇怪。")
 
         def count_eligible_girls(self):
 
@@ -6743,7 +6743,7 @@ init -2 python:
 
                     text1 += "\n" + __(a.capitalize()) + "喜好: " + shown
                 else:
-                    raise AssertionError("Unexpected breaking value for " + a + ". Please report this bug.")
+                    raise AssertionError("意外的" + a + "赋值。请反馈这个BUG。")
 
             if inter:
                 text1 += "\n女孩的互动: " + str(inter)
@@ -7019,7 +7019,7 @@ init -2 python:
                         chance = c
                         break
                 else:
-                    raise AssertionError("Couldn't process differential during MC challenge.")
+                    raise AssertionError("在主角挑战过程中无法处理分支。")
 
             if percentage:
                 return str(int(chance*100)) + "%"
@@ -7737,7 +7737,7 @@ init -2 python:
                         self.limits[req] = district.rank
 
                     if self.limits[req] <= 0: # Sanity check
-                        raise AssertionError("Contract requirement out of bounds: %s (current district: %s)" % (self.limits[req], district.rank))
+                        raise AssertionError("合同所在地突破了地图限制: %s (当前地点: %s)" % (self.limits[req], district.rank))
 
                 elif req.startswith("skill"): # Base skill limit is determined by game chapter and diff, +/- 15, with a -20 modifier then -10 for the first and second contract of each chapter.
                     mod = dice(31)-16
@@ -7992,7 +7992,7 @@ init -4 python:
                 self.filename = file_parts[-1]
 
             if not path:
-                raise AssertionError("No path provided for the Picture() object")
+                raise AssertionError("没有路径提供给 the Picture() object")
 
             self.path = path
 

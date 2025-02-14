@@ -327,7 +327,7 @@ init -3 python:
                 available_templates = [g for g in available_templates if not g.init_dict["cloning options/unique"]] # This clears unique girls from the list (shouldn't be needed)
 
                 if not available_templates:
-                    raise AssertionError("Not enough girl templates available - Check your girlpack configuration (all set to 'unique'?)")
+                    raise AssertionError("女孩包数量不足 - 请检查你的女孩包自定义配置设置文件 (是否全部设置为 '独一无二'?)")
 
                 for girl in available_templates:
                     if girl not in glist and girl.count_occurences("player") == 0 and girl.count_occurences("all") <= 3:
@@ -339,7 +339,7 @@ init -3 python:
 
                 else:
                     if not available_templates:
-                        raise AssertionError("Not enough girl templates available - Check your girlpack configuration")
+                        raise AssertionError("女孩包数量不足 - 请检查你的女孩包自定义配置设置文件")
 
                     found = False
                     i = 1
@@ -347,7 +347,7 @@ init -3 python:
                         i += 1
 
                         if i > 250:
-                            raise AssertionError("Error chasing duplicates - Possible infinite loop detected")
+                            raise AssertionError("Error chasing duplicates - 检测到可能的无限循环")
 
                         for girl in available_templates:
                             if girl.count_occurences("all") < i:
