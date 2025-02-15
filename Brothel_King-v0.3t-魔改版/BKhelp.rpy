@@ -505,7 +505,7 @@ label help(scr):
                         menu_list += mod.help_prompts
 
             if menu_list:
-                $ menu_list.append(("取消", "back"))
+                $ menu_list.append(("关闭菜单", "back"))
 
                 $ target_label = menu(menu_list)
 

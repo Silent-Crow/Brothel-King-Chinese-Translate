@@ -7373,7 +7373,7 @@ screen resource_tab(rlist="MC", sz = yres(15), sp = 3, x=0.0, y=0.0, bg=None): #
             for resource in [resource_dict[r] for r in build_resources]:
 
                 if MC.resources[resource.name]>0:
-                    button background None action NullAction() tooltip (resource.description + __(" You have ") + str(MC.resources[resource.name]) + " " + __(misc_name_dict[resource.name]) + __(" in store.")) xpadding sp ypadding sp:
+                    button background None action NullAction() tooltip (resource.description + "你拥有" + str(MC.resources[resource.name]) + "个单位的" + __(misc_name_dict[resource.name]) + "。") xpadding sp ypadding sp:
                         has hbox spacing sp*2 yalign 0.5
                         add resource.pic.get(sz, sz) yalign 0.5
                         if MC.resources[resource.name] < 100:

@@ -213,6 +213,9 @@ screen cheat_box:
     hbox:
         xalign KW_Widget_x/100.0
         yalign KW_Widget_y/100.0
+        xoffset -60  # 距离右边缘 60 像素
+        yoffset 0   # 距离顶部 20 像素
+        
         if KW_Show:
             textbutton "隐藏" action SetVariable("KW_Show",False)  text_size 16
         else:

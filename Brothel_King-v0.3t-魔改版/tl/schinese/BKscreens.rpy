@@ -638,14 +638,6 @@ translate schinese strings:
     old "Difficulty: "
     new "难度: "
 
-    # game/BKscreens.rpy:7031
-    old " You have "
-    new " 你有"
-
-    # game/BKscreens.rpy:7031
-    old " in store."
-    new " 的储备."
-
     # game/BKscreens.rpy:7106
     old "There is a shortage of "
     new "本周"
