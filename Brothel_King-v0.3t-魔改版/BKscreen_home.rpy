@@ -279,7 +279,7 @@ screen right_menu_city():
 
         textbutton "探索城市" style_group "rm":
             action Return("districts")
-            tooltip "探索泽恩的各个地区，与美丽的单身女性邂逅\n({i}快捷键: {u}V{/u}{/i})"
+            tooltip "探索泽恩的各个地区，结识各种各样的人。\n({i}快捷键: {u}V{/u}{/i})"
 
 
 ################

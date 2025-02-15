@@ -250,13 +250,13 @@ translate schinese girls_first_time_9dd554bc:
 translate schinese girls_first_time_0b4221ae:
 
     # sill "I think I'll leave you to it from now on, Master. Please ask if you have any question."
-    sill "从现在开始,我想把你独自留下来了,主人。如有任何问题请随时问我。"
+    sill "现在青楼事务由您管理了，主人。如有任何问题请随时问我。"
 
 # game/BKmain.rpy:1059
 translate schinese girls_first_time_faba9c36_1:
 
     # "Press the '?' button in the top right corner to obtain information on the game or your current screen."
-    "点击右上角的'?'按钮,获取关于游戏或当前界面的信息。"
+    "点击右上角的'❓'按钮,获取关于游戏或当前界面的信息。"
 
 # game/BKmain.rpy:1186
 translate schinese girls_loop_07129470:
@@ -508,19 +508,19 @@ translate schinese strings:
 
     # game/BKmain.rpy:1006
     old "Work as a waitress"
-    new "作为女仆工作"
+    new "给客人端茶倒酒"
 
     # game/BKmain.rpy:1006
     old "Work as a dancer"
-    new "作为舞女工作"
+    new "给客人表演舞蹈"
 
     # game/BKmain.rpy:1006
     old "Work as a masseuse"
-    new "作为按摩技师工作"
+    new "给客人全身按摩"
 
     # game/BKmain.rpy:1006
     old "Work as a geisha"
-    new "作为艺妓工作"
+    new "为客人表演节目"
 
     # game/BKmain.rpy:1006
     old "Work as a whore"
@@ -528,15 +528,15 @@ translate schinese strings:
 
     # game/BKmain.rpy:1045
     old "Don't ask me again"
-    new "以后不用再问"
+    new "别再烦我了"
 
     # game/BKmain.rpy:1193
     old "Don't tell me again"
-    new "不用再告诉我"
+    new "不用再告诉我了"
 
     # game/BKmain.rpy:1250
     old "Ask [girl.name] to work and whore at the same time?"
-    new "让[girl.name]一边工作一边勾引客人吗?"
+    new "你想让[girl.name]一边工作一边勾引客人吗?"
 
     # game/BKmain.rpy:1529
     old "Do you really want to rank up [girl.fullname] for [cost] gold?"

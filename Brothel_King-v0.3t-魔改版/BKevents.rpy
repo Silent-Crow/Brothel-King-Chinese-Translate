@@ -720,10 +720,10 @@ label advance_to_chapter(chapter, silent=False, free=False, start=False): # All 
     if start:
     # START - Set-up base name and furniture
         $ brothel = newbrothel
-        $ brothel.setup("The Rose Garden", free_room=district.room)
+        $ brothel.setup("玫瑰花园", free_room=district.room)
         $ get_starting_furniture(chapter)
 
-        $ old_brothel_name = "The Rose Garden"
+        $ old_brothel_name = "玫瑰花园"
         $ old_brothel_pic = brothel.pic
         $ old_brothel_auction_price = 0
 

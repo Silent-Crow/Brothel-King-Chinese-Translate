@@ -465,7 +465,7 @@ screen overlay(current_screen = None, kwargs=None, ttip=False):
 
         null width xres(200)
 
-        textbutton "?" tooltip "了解当前界面的各种功能。":
+        textbutton "❓" tooltip "获取关于游戏的帮助。":
 
             style "button"
             xalign 1.0
@@ -3791,7 +3791,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
             if suzume_hints_active and context == "visit":
                 frame background c_ui_dark xpadding 6 ypadding 6 xalign 0.35:
                     vbox:
-                        text "追捕女忍者" size res_font(14) xalign 0.5 yalign 0.5
+                        text "{b}追捕女忍者{/b}" size res_font(14) xalign 0.5 yalign 0.5
                         button xsize yres(120) ysize yres(120) xpadding 6 ypadding 6:
                             if MC.interactions >= 1:
                                 action Call("c3_interrogate_contacts")
@@ -3802,7 +3802,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
                             add "side suzume" xalign 0.5 yalign 0.5 fit "contain"
 
             else:
-                text "无照经营" xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
+                text "{b}无 照 经 营{/b}" xalign 0.5 yalign 0.0 size res_font(14) text_align 0.5 color c_darkgrey
 
             use district_button(district_dict["slum"], context) id "b1"
 
@@ -7903,7 +7903,7 @@ screen girl_interact(girl, free=False):
                                 textbutton __(topic.caption) + get_act_weakness_symbol(girl, topic.act) background None text_layout "nobreak" text_size res_font(13) text_color c_white xsize xres(100) text_xalign 0.0 action NullAction():
                                     if girl.personality_unlock[topic.act]:
                                         #tooltip __("You know that [girl.name] has ") + __(girl.get_reaction_to_act(topic.act)) + __(" for ") + __(topic.act) + __(" acts.")  源代码，为了翻译改变了顺序
-                                        tooltip "你发现[girl.name]对" + __(farm_related_dict[topic.act]) + "感到" + __(girl.get_reaction_to_act(topic.act))
+                                        tooltip "你发现[girl.name]对" + __(farm_related_dict[topic.act]) + "感到" + girl_related_dict[girl.get_reaction_to_act(topic.act)]
                                     else:
                                         tooltip "你不知道[girl.name]对" + __(farm_related_dict[topic.act]) + "的态度。"
                                     hovered Show("sex_details", girl=girl)

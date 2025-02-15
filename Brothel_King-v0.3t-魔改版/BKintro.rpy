@@ -2151,7 +2151,7 @@ label main_first_time:
 
     $ brothel.name = renpy.input("你想把青楼的名字改成什么?", default = brothel.name, length = 40)
 
-    if brothel.name.lower() == "the rose garden":
+    if brothel.name.lower() == "玫瑰花园":
         sill "Yay! I'm glad you liked it."
         $ NPC_sill.love += 1
     elif brothel.name.lower() == "cunts galore":

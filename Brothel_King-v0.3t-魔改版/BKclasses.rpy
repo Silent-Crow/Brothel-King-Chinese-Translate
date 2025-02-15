@@ -2184,7 +2184,7 @@ init -2 python:
 
         def __init__(self, rank, level, upgrades, max_rep):
 
-            self.name = "The Rose Garden"
+            self.name = "玫瑰花园"
             self.rank = rank
             self.level = level
             self.cost = bro_cost[self.level]
@@ -7927,44 +7927,44 @@ init -2 python:
         def get_ttip(self, context = "base"): # type can be "base", "plus" or "minus"
             if context == "base":
                 if self.type == "resources" and self.index > 0:
-                    return self.ttip + " Will receive " + and_text(["+%i of each rank %i resource" % (self.values[i+1], i+1) for i in range(self.index)]) + "."
+                    return self.ttip + "开局获得" + and_text(["每种各%i个单位的%i级资源" % (self.values[i+1], i+1) for i in range(self.index)]) + "。"
                 elif context == "girl" and self.index > 0:
-                    return self.ttip + " A Rank %i girl will join your brothel on Day 1." % self.get()
+                    return self.ttip + "每个月1号都会有一个%i阶的女孩加入你的青楼。" % self.get()
                 return self.ttip
 
             elif context == "plus":
                 if self.type == "bool":
-                    return "Activate " + self.name + " for {image=tb crystal} %i."
+                    return "激活" + self.name + "，消耗{image=tb crystal} %i。"
                 elif self.type == "boost":
-                    return "Boost " + self.name + " for {image=tb crystal} %i."
+                    return "Boost " + self.name + "，消耗{image=tb crystal} %i。"
                 elif self.type == "dispenser":
-                    return "Increase rate of production of this item for {image=tb crystal} %i."
+                    return "Increase rate of production of this item for {image=tb crystal} %i。"
                 elif self.type == "item":
                     if self.get():
-                        return "Increase your magic notebook's capacities for {image=tb crystal} %i (full information)."
+                        return "Increase your magic notebook's capacities for {image=tb crystal} %i (full information)。"
                     else:
-                        return "Increase your magic notebook's capacities for {image=tb crystal} %i (partial information)."
+                        return "Increase your magic notebook's capacities for {image=tb crystal} %i (partial information)。"
                 elif self.type == "pref":
-                    return "Increase base sexual preferences for all girls for {image=tb crystal} %i."
+                    return "Increase base sexual preferences for all girls for {image=tb crystal} %i。"
                 else:
-                    return "Increase " + self.name + " for {image=tb crystal} %i."
+                    return "Increase " + self.name + " for {image=tb crystal} %i。"
 
             elif context == "minus":
                 if self.type == "bool":
-                    return "Deactivate " + self.name + " and refund {image=tb crystal} %i."
+                    return "Deactivate " + self.name + " and refund {image=tb crystal} %i。"
                 elif self.type == "boost":
-                    return "Reduce " + self.name + " boost and refund {image=tb crystal} %i."
+                    return "Reduce " + self.name + " boost and refund {image=tb crystal} %i。"
                 elif self.type == "dispenser":
-                    return "Decrease rate of production of this item and refund {image=tb crystal} %i."
+                    return "Decrease rate of production of this item and refund {image=tb crystal} %i。"
                 elif self.type == "item":
                     if (self.get()-1):
-                        return "Decrease your magic notebook's capacities and refund {image=tb crystal} %i (partial information)."
+                        return "Decrease your magic notebook's capacities and refund {image=tb crystal} %i (partial information)。"
                     else:
-                        return "Decrease your magic notebook's capacities and refund {image=tb crystal} %i (no information)."
+                        return "Decrease your magic notebook's capacities and refund {image=tb crystal} %i (no information)。"
                 elif self.type == "pref":
-                    return "Decrease base sexual preferences for all girls and refund {image=tb crystal} %i."
+                    return "Decrease base sexual preferences for all girls and refund {image=tb crystal} %i。"
                 else:
-                    return "Decrease " + self.name + " and refund {image=tb crystal} %i."
+                    return "Decrease " + self.name + " and refund {image=tb crystal} %i。"
 
         def record(self):
             persistent.NGPsettings[self.name] = self.index

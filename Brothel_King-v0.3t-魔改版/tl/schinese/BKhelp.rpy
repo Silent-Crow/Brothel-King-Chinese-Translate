@@ -946,13 +946,13 @@ translate schinese jobs_introduction_efdea71a:
 translate schinese help_brothel_intro_3b2a500f:
 
     # sill "Welcome to your brothel! Here you can manage your brothel options, buy new rooms and hire freelancers."
-    sill "欢迎回家! 在这里，你可以修改青楼设置，扩建新的房间和雇佣自由职业者。"
+    sill "在这里，你可以修改青楼设置，扩建新的房间和雇佣自由职业者。"
 
 # game/BKhelp.rpy:1293
 translate schinese help_brothel_intro_0aaac324:
 
     # sill "Would you like to learn more about your brothel?" nointeract
-    sill "你想了解更多关于青楼的信息吗？" nointeract
+    sill "你想了解更多关于青楼设置的信息吗？" nointeract
 
 # game/BKhelp.rpy:1300
 translate schinese help_brothel_intro_86408952:
@@ -964,13 +964,13 @@ translate schinese help_brothel_intro_86408952:
 translate schinese help_brothel_intro_f3d82c03:
 
     # sill "Here, since you don't know anyone in town yet, I can be your first trainer."
-    sill "啊，既然你还不认识城里的人，那就让我来做你的第一位协助者吧。"
+    sill "啊，既然你还不认识什么人，那就让我来做你的第一位协助者吧。"
 
 # game/BKhelp.rpy:1304
 translate schinese help_brothel_intro_3e7c662b:
 
     # sill "My special bonus means you won't have to pay upkeep for a girl every night. Useful to get you started making some money."
-    sill "我的特殊能力，可以每晚都免去一位女孩的保养费。对你积攒金币很有用。"
+    sill "我可以每晚免去随机一位女孩的保养费。这有助于您前期的资产积累。"
 
 # game/BKhelp.rpy:1311
 translate schinese help_brothel_fc6cac84:
@@ -1000,13 +1000,13 @@ translate schinese help_brothel_e919f168:
 translate schinese help_brothel_678986c0:
 
     # sill "From the Brothel, you can also access the {b}Carpenter's Wagon{/b} and {b}Customer options{/b}."
-    sill "在青楼信息界面还可以点击{b}工匠改造{/b}和{b}经营策略{/b}。"
+    sill "在青楼信息界面还可以点击{b}青楼改造{/b}和{b}经营策略{/b}。"
 
 # game/BKhelp.rpy:1308
 translate schinese help_brothel_08baf912:
 
     # sill "There are two types of rooms: bedrooms and common rooms."
-    sill "共有两种类型的房间:卧室和经营场所。"
+    sill "这里有两种类型的房间:卧室和经营场所。"
 
 # game/BKhelp.rpy:1310
 translate schinese help_brothel_4a0fd479:

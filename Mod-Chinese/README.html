@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 设置网页背景图片 */
+        body {
+            margin: 0; /* 移除默认边距 */
+            font-family: Arial, sans-serif; /* 设置字体 */
+            background-image: url('game/UI/theme.webp'); /* 设置背景图片路径 */
+            background-size: cover; /* 图片覆盖整个背景 */
+            background-position: center; /* 图片居中 */
+            background-repeat: no-repeat; /* 防止图片重复 */
+            background-attachment: fixed; /* 固定背景（可选） */
+            display: flex;
+            flex-direction: column; /* 垂直排列 */
+            align-items: center; /* 水平居中 */
+            min-height: 100vh; /* 使body至少占满整个视口高度 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 72px; /* 文本大小 */
+            color: white; /* 文本颜色 */
+            font-weight: bold; /* 加粗 */
+            text-align: center; /* 文字居中 */
+            margin: 20px 0; /* 上下边距 */
+            padding: 10px; /* 内边距 */
+            border-radius: 8px; /* 圆角 */
+            width: 100%; /* 宽度占满 */
+            box-sizing: border-box;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 容器样式 */
+        .container {
+            width: 90%;
+            max-width: 1600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3); /* 半透明背景 */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+            box-sizing: border-box;
+            text-align: center; /* 容器内内容居中 */
+            margin-top: 100px; /* 避免标题遮挡 */
+        }
+
+        /* 按钮样式 */
+        .toggle-btn {
+            width: 80%; /* 调整按钮宽度 */
+            padding: 12px;
+            margin: 10px auto; /* 按钮居中 */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center; /* 按钮文字居中 */
+            transition: 0.3s;
+            border-radius: 4px;
+            display: block; /* 使按钮独占一行 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .toggle-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* 内容区域样式 */
+        .content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: rgba(241, 241, 241, 0.4); /* 半透明背景 */
+            border-radius: 0 0 4px 4px;
+            text-align: left; /* 内容区域文字左对齐 */
+        }
+
+        /* 展开时的样式 */
+        .content.active {
+            padding: 15px;
+            max-height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 添加标题 -->
+    <h1>青 楼 之 王</h1>
+    
+        
+    <div class="container">
+        <!-- 第一个折叠项 -->
+        <button class="toggle-btn">游 戏 介 绍</button>
+        <div class="content">
+            <h2>这是个什么样的游戏?</h2>
+            <p style="padding-left: 30px;">青楼之王是一款基于《妓院模拟器》开发的游戏，并从其他游戏（如《奴隶制造者》）中获得了一些灵感。游戏使用了Ren'Py引擎研发，我的目标是制作一款UI干净的有趣的游戏，简明的美术风格和完整的背景故事 (目前还没有写完主线剧情)。<br /><br />因为这是一个个人项目，我的目标是尽快将其制作成一个可玩的状态，但现在我真的需要一些帮助-特别是来自玩家的反馈。<br /><br /><strong>警告</strong><br />本游戏包含<strong>成人</strong>内容，如卖淫、强奸、奴役、奴役、怪物、兽交等。在现实生活中，我不会容忍任何这样的事情：但这只是一个游戏，如果它让你不安，请不要玩它。一些更硬核的内容可以在首选项中禁用，但要注意，这些设置不会禁用一些包含此类内容的故事事件。免责声明<br /><br /><br /><br />游戏中使用的所有美术素材都不是我绘制的，我希望我能归功于所有合法的作者，但我已经记不清这些东西的来源了。如果您对游戏中使用的任何素材（图片，音乐，声音等）有任何问题，请通过论坛与我联系，我将根据需要适当地添加和/或删除它。</p>
+            <p style="padding-left: 60px;">&nbsp;</p>
+            <h2><span class="mw-headline">什么是 Ren'Py引擎?<br /></span></h2>
+            <p style="padding-left: 30px;">这个游戏是使用Ren'Py引擎制作出来的。它真的很好用。</p>
+            <p style="padding-left: 30px;">Ren'Py是视觉小说引擎 &ndash;来自世界各地的成千上万的创作者使用 &ndash; 这可以帮助您使用文字、图像和声音来讲述在计算机和移动设备上运行的交互式故事。 这些游戏既可以是视觉小说，也可以是生活模拟游戏。易于学习的脚本语言允许任何人有效地编写大型视觉小说，而其Python脚本则足以用于复杂的模拟游戏。</p>
+            <p style="padding-left: 30px;">Ren'Py是开源和免费商用的。</p>
+            <p style="padding-left: 30px;">访问<a href="https://www.renpy.org/">https://www.renpy.org</a> 获取更多游戏相关资讯。</p>
+            <p style="padding-left: 30px;">&nbsp;</p>
+            <h2 style="padding-left: 30px;"><span class="mw-headline">Bug报告和其他问题<br /></span></h2>
+            <p style="padding-left: 60px;">请将所有问题和错误报告直接发送到绅士高校的论坛 : <a href="https://www.henthighschool.net/brothel-king">https://www.henthighschool.net/brothel-king</a></p>
+            <p style="padding-left: 60px;">&nbsp;</p>
+        </div>
+
+        <!-- 第二个折叠项 -->
+        <button class="toggle-btn">游 戏 准 备</button> 
+        <div class="content">
+            <h2 style="padding-left: 30px;"><span class="mw-headline">准备工作</span></h2>
+            <p style="padding-left: 60px;">在开始游玩青楼之王前, 您需要做好以下准备:</p>
+            <p style="padding-left: 60px;">① 下载最新的游戏版本以及 <strong>安装最新的补丁</strong> (这一点非常重要，因为当游戏处于测试阶段时，需要最新的补丁来使其更加稳定)。 要安装补丁, 只需要把它解压到'<em>game\</em>'文件夹，覆盖现有的文件即可</p>
+            <p style="padding-left: 60px;">② 准备好一个或多个 <strong>女孩图片包</strong>。没有女孩图片包游戏将无法运行。对于初学者来说, 你可以从获取游戏的平台那里下载<strong>基础女孩组合包</strong>（通常都会提供，倒狗不给那就去论坛找吧）。 安装女孩包, 只需要把它们解压到'<em>game\girls\</em>'文件夹。 (如果这个文件夹不存在，请新建一个)。每个文件夹都应该以一个女孩的名字命名，并包含图片文件。请注意，我只提供基本的女孩包的支持。用户自制的女孩包由他们自己承担责任。</p>
+            <p style="padding-left: 60px;">确保上面列出的所有文件的最新版本都可用    <a href="https://www.henthighschool.net/brothel-king/">论坛链接</a></p>
+        </div>
+
+        <!-- 第三个折叠项 -->
+        <button class="toggle-btn">操 作 说 明</button>
+        <div class="content">
+            
+            <h2 style="padding-left: 30px;"><span class="mw-headline">控件和快捷键</span></h2>
+            <p style="padding-left: 60px;"><span class="mw-headline">想要推动游戏对话或事件, <tt>左键</tt>或者按下<tt>空格键</tt>亦或是<tt>回车键</tt>。如果你打开了菜单界面, <tt>左键</tt> 点击选择, 或者使用方向键选择一个选项，用<tt>回车键</tt>确认。</span></p>
+            <p style="padding-left: 60px;">以下按键可以在游戏中使用:</p>
+            <p style="padding-left: 60px;"><tt>右键</tt>允许您返回到上一级菜单,如果你在主界面,单击右键可以调出设置菜单界面。设置菜单(包含存档/读档)在任何时候都可以通过按下<tt>Esc</tt>键调出。</p>
+            <p style="padding-left: 60px;"><tt>中键</tt> 将隐藏UI和文本以显示背景图片。这只会在剧情事件中起作用。</p>
+            <p style="padding-left: 60px;">将鼠标悬停在游戏中的大多数UI组件上以访问提示和详细信息。</p>
+            <p style="padding-left: 60px;">按下<tt>Ctrl</tt>键可以更快地跳过文本。默认情况下，它只会跳过你已经看到的文本，但这可以在“设置”中进行调整，以快速跳过所有文本。</p>
+            <p style="padding-left: 60px;">下面的快捷键允许从一个屏幕快速移动到另一个屏幕:</p>
+            <p style="padding-left: 60px;">H: 主菜单<br />C: 主角面板<br />G: 女孩界面<br />B: 青楼面板<br />W: 工匠面板 (如果已经解锁的话)<br />F: 农场界面 (如果已经解锁的话)<br />V: 探索城市<br />L: 回到最后拜访的城市地区<br />M: 奴隶市场<br />S: 商店<br />P: 公告大厅<br />E: 结束一天，开始营业<br />O或Esc: 保存/设置菜单<br /><br />(本地Ren'Py快捷键仍然可以工作，但在必要时已被shift+[key]取代。)</p>
+            <h2 style="padding-left: 30px;"><span class="mw-headline">游戏内帮助<br /></span></h2>
+            <p style="padding-left: 60px;">有关更详细的介绍，包括核心游戏概念和特定界面的介绍，请单击屏幕右上角的 <span style="color: #0000ff;"><strong>❓</strong></span>按钮</p>
+        </div>
+
+        <!-- 第四个折叠项 -->
+        <button class="toggle-btn">常 见 问 题</button>
+        <div class="content">
+            <h4 style="padding-left: 30px;"><span class="mw-headline">为什么我看不到双飞和群交的按钮开关了？<br /></span></h4>
+            <p style="padding-left: 60px;">在最新的版本中，作者移除了这个按钮开关。你需要训练女孩让她的双飞或群交工作意愿达到阈值，变为绿色才能让她们提供这些服务。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">现在该如何让女孩提供双飞和群交服务？<br /></span></h4>
+            <p style="padding-left: 60px;">双飞服务需要当晚有至少2个女孩激活了双飞，且她们都激活了同一项性服务（侍奉，性交，肛交，调教），最后客人想要双飞，才能触发。<br />群交则需要客人想要群交服务，且女孩可以提供第一位客人想要的性服务（侍奉，性交，肛交，调教）才能触发，后面的客人会与第一位客人保持一致。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">为什么更新后一打开游戏就报错？<br /></span></h4>
+            <p style="padding-left: 60px;">每次更新时都请确保删除了game目录下的所有.rpyc文件，另开新档进行游戏，否则都会导致报错。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">我照着上面做了，为什么还是会报错？<br /></span></h4>
+            <p style="padding-left: 60px;">请确保你的汉化补丁和游戏本体适配，不要用新补丁打在旧版本上。如果不确定版本，请在论坛或交流群内咨询。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">女孩包里的BK.ini文件是什么？<br /></span></h4>
+            <p style="padding-left: 60px;">那是利用青楼之王女孩包标签工具生成的自定义配置文件，可以自定义女孩生成时的初始属性，特质，背景故事，爱好，性癖等等。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">为什么打开游戏就报错？<br /></span></h4>
+            <p style="padding-left: 60px;">请检查你的角色包里是否有除了图片以外的其他文件，它们可能会和汉化冲突。删除它们（或者备份）后删除游戏目录下所有的rpyc文件，启动游戏。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何解锁成就商店？<br /></span></h4>
+            <p style="padding-left: 60px;">通关一次游戏后解锁新周目的成就商店，通过解锁游戏内的成就获得成就水晶，可以在新周目开始时购买各种强力增幅效果。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">自选的主角头像怎么大小不一致，我可以替换自己喜欢的素材吗？<br /></span></h4>
+            <p style="padding-left: 60px;">因为图片本身尺寸不同，你可以在game/MC文件夹内进行替换，保证图片名相同，格式为webp即可。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何删除存档？<br /></span></h4>
+            <p style="padding-left: 60px;">打开存档界面，将鼠标移动到要删除的存档上，按delete键，确认后即可删除该存档。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">为什么我进不去论坛，哪里可以下载女孩包？<br /></span></h4>
+            <p style="padding-left: 60px;">绅士高校论坛可以直连，如果进不去你可能被运营商BAN了，挂VPN（加速器/梯子）进。论坛内有女孩包下载链接，交流群里的文档也有下载链接。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">我打不开女孩包下载链接的网盘，该怎么办？<br /></span></h4>
+            <p style="padding-left: 60px;">论坛角色包用的是MEGA网盘，需要安装插件直连或者挂VPN下载。MEGA网盘几乎不会被举报，其他网盘看你运气了。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何解锁奴隶农场功能？<br /></span></h4>
+            <p style="padding-left: 60px;">在农场触发事件，即可开启支线。不断地在四处探索，推进事件，最后就能解锁奴隶农场了。只要在贫民窟探索即可。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何解锁贫民窟未知的地点？<br /></span></h4>
+            <p style="padding-left: 60px;">在贫民窟四处探索，触发事件开启主线，即可解锁未知的地点。只要在贫民窟探索即可。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">主线目标让我等待云雀，可是她为什么不来？<br /></span></h4>
+            <p style="padding-left: 60px;">需要等待几天后，才会继续推进事件，不要着急。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">游戏可以作弊吗，作弊功能在哪里？<br /></span></h4>
+            <p style="padding-left: 60px;">游戏内置了作弊菜单功能，点击右上角❓按钮打开打开作弊菜单即可启用。想要更加好用的作弊功能可以使用MOD，例如国王特权。请注意，一旦作弊本周目就无法继续获得成就了。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">不同的职业区别在哪里？谁更加强势？<br /></span></h4>
+            <p style="padding-left: 60px;">战士侧重力量属性，更容易处理突发事件。商人侧重魅力，可以迅速积累财富。法师侧重精神，拥有各种提升女孩属性的光环咒语。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">善恶值有用吗，会影响剧情吗？<br /></span></h4>
+            <p style="padding-left: 60px;">善恶值会影响你对女孩训练的效果，如邪恶值高则利用恐惧心理训练效果会更佳，善恶值并不会影响剧情走向。游戏内的事件和互动都会令善恶值发生变化。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">经营策略里的客人权重有什么作用？<br /></span></h4>
+            <p style="padding-left: 60px;">经营策略设置里玩家可以调整不同客人的占比，比如目前解锁了客户A，客户B，客户C。A的权重为1，B为2，C为3。那么每天晚上客人中有1/（1+2+3）也就是六分之一的客人都为A类，B类有三分之一，C类二分之一。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">和自由女孩互动后怎么没办法增进关系了？<br /></span></h4>
+            <p style="padding-left: 60px;">和自由女孩的关系达到一定程度后可以送花和她成为恋人，好感度满了以后，如果她需要钱你可以劝她来你的青楼工作。</p>
+        </div>
+
+        <!-- 第五个折叠项 -->
+        <button class="toggle-btn">模 组 问 题</button>
+        <div class="content">
+            <h4 style="padding-left: 30px;"><span class="mw-headline">模组怎么安装？<br /></span></h4>
+            <p style="padding-left: 60px;">下载了模组文件后，解压出来，一般都只有一个文件夹，把它放到game/MODS文件夹内，游戏里的设置选项中激活模组即可。<br />如果解压出来不止一个文件夹，那就要找到对应的目录位置覆盖进去，比如有的模组提供了图片，有的修改了游戏源代码。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">模组怎么更新？<br /></span></h4>
+            <p style="padding-left: 60px;">在论坛有对应的帖子和资源整合帖，更新了会在帖子发布新的下载链接。资源整合贴不一定是最新的。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">模组报错怎么办？<br /></span></h4>
+            <p style="padding-left: 60px;">请检查模组版本与游戏版本是否适配，是否更新到最新。如果始终无法解决，建议先禁用或移除模组。在论坛反馈求助。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何自制模组？<br /></span></h4>
+            <p style="padding-left: 60px;">自学python和renpy，可以网上搜索相关教程。你也可以修改其他MOD的代码将其中的文本内容修改成自己喜欢的，将简单的事件代码复制粘贴扩展文本长度。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">问题？（待添加）<br /></span></h4>
+            <p style="padding-left: 60px;">回答</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">问题？（待添加）<br /></span></h4>
+            <p style="padding-left: 60px;">回答</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">问题？（待添加）<br /></span></h4>
+            <p style="padding-left: 60px;">回答</p>
+
+        </div>
+
+        <!-- 第六个折叠项 -->
+        <button class="toggle-btn">标 签 工 具</button>
+        <div class="content">
+            <h4 style="padding-left: 30px;"><span class="mw-headline">标签工具是什么？<br /></span></h4>
+            <p style="padding-left: 60px;">标签工具是用于编辑制作角色包的软件，可以一边浏览图片一边快捷添加标签。还可以生成自定义配置文件。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">标签工具从哪里下载？<br /></span></h4>
+            <p style="padding-left: 60px;">在论坛下载。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">标签工具如何使用？<br /></span></h4>
+            <p style="padding-left: 60px;">将要编辑的角色包放到game/image目录下，打开软件进行编辑。文件夹内有视频教程，跟学即可。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">主要标签和次要标签的区别？<br /></span></h4>
+            <p style="padding-left: 60px;">主要标签为游戏内最常触发的事件的标签，如果缺失角色包将无法正常使用。次要标签为主要标签的分支扩展，对应一些特殊事件。缺少次要标签时游戏会选用主要标签图片代替，而缺少主要标签可能会调用游戏本地的默认图片，这会影响你的游戏体验。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">自定义配置文件的作用？<br /></span></h4>
+            <p style="padding-left: 60px;">该文件可以设置角色是否独一无二，初始属性优劣，性癖，爱好，背景故事，性格等等。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">如何生成自定义配置文件？<br /></span></h4>
+            <p style="padding-left: 60px;">使用标签工具，在菜单里选择生成自定义配置文件。文件夹内有视频教学。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">角色包报错怎么办？<br /></span></h4>
+            <p style="padding-left: 60px;">多半是外国玩家制作的角色包，可能和汉化版本不兼容，可以试试删除所有的非图片文件，重新生成自己制作的自定义配置文件，再进行游戏。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">为什么无法编辑视频文件？<br /></span></h4>
+            <p style="padding-left: 60px;">新版的标签工具可以在一页内同时浏览十张图片，可以批量选中批量添加标签，如果有视频文件就会很卡，所以禁用了视频文件格式。如果需要编辑可以手动重命名或是使用旧版标签工具。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">注意事项？<br /></span></h4>
+            <p style="padding-left: 60px;">一旦游戏报错，尝试修复后都请删除所有的.rpyc文件，然后再启动游戏，开始新存档，否则仍然可能会报错。</p>
+            <h4 style="padding-left: 30px;"><span class="mw-headline">女孩包评分是什么？<br /></span></h4>
+            <p style="padding-left: 60px;">编辑好角色包后，在游戏内浏览女孩列表时会看到从A+到C不等的评分等级，这是根据角色包内图片标签的覆盖率和数量评判的。主要标签的权重更高，评分仅供玩家参考，并不需要刻意追求高评分，把主要标签弄好最为优先。</p>
+        </div>
+    </div>
+
+    <script>
+        // 获取所有切换按钮
+        const buttons = document.querySelectorAll('.toggle-btn');
+
+        // 为每个按钮添加点击事件
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                // 切换当前按钮的下一个内容区域
+                const content = this.nextElementSibling;
+                content.classList.toggle('active');
+                
+                // 关闭其他展开的内容（可选）
+                document.querySelectorAll('.content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
