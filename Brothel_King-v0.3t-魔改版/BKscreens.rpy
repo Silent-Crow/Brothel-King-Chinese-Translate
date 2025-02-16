@@ -1997,23 +1997,23 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         else:
                             $ text1 = ""
 
-                        if girl.has_perk(act.capitalize()):
+                        #if girl.has_perk(act.capitalize()):
 
-                            button xpadding 0 ypadding 0 xmargin 0 ymargin 0 yalign 1.0 background None action NullAction() hovered Show("sex_details", girl=girl) unhovered Hide("sex_details"):
-                                hbox spacing 5:
-                                    textbutton text1:
-                                        text_font "1.ttf"
-                                        text_size res_font(12)
-                                        xsize yres(35)
-                                        ysize yres(20)
-                                        ypos -0.1
-                                        if not girls_firstvisit:
-                                            action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
+                        button xpadding 0 ypadding 0 xmargin 0 ymargin 0 yalign 1.0 background None action NullAction() hovered Show("sex_details", girl=girl) unhovered Hide("sex_details"):
+                            hbox spacing 5:
+                                textbutton text1:
+                                    text_font "1.ttf"
+                                    text_size res_font(12)
+                                    xsize yres(35)
+                                    ysize yres(20)
+                                    ypos -0.1
+                                    if not girls_firstvisit:
+                                        action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
 
-                                        hovered (tt.Action(_("这将允许她为客人提供{b}") + act + _("服务{/b}。她必须激活至少一项常规性服务。")), Show("sex_details", girl=girl))
-                                        unhovered Hide("sex_details")
-                                    text __(act.capitalize()) layout "nobreak": #preference_color[pref] % stat.name:
-                                        size res_font(12)
+                                    hovered (tt.Action(_("这将允许她为客人提供{b}") + act + _("服务{/b}。她必须激活至少一项常规性服务。")), Show("sex_details", girl=girl))
+                                    unhovered Hide("sex_details")
+                                text girl_related_dict[act] layout "nobreak": #preference_color[pref] % stat.name:
+                                    size res_font(12)
 
                 if context == "slavemarket":
                     $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" Prior training may make a girl more suitable for sex acts.")

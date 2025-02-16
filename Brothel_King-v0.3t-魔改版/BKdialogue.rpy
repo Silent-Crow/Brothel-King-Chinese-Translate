@@ -639,7 +639,7 @@ init -1 python:
     add_dialogue("task success2", "anal", ["我没想到它会适合...但你是天生的！"])
     add_dialogue("task failure", "anal", ["[girl.name] 冷漠地让男人操她的屁股。当他在她体内移动一英寸时，她就会退缩，而这个男人很快就会对她的态度感到恼火。", "g: 我有一位愤怒的客人在抱怨你不知道如何在屁股上插鸡巴。我付钱给你到底是为了什么？ *生气的*"], multiple=True)
 
-    add_dialogue("task description", "toy", "一位客人给了[女孩全名]一个神秘包裹，并带她去了一间私人房间。当她打开它时，她立即明白了对她的期望。")
+    add_dialogue("task description", "toy", "一位客人给了[girl.name]一个神秘包裹，并带她去了一间私人房间。当她打开它时，她立即明白了对她的期望。")
     add_dialogue("task success", "toy", ["[girl.name] 总是很高兴被介绍新玩具，为她的仰慕者张开双腿，同时让自己达到巨大的高潮。", "g: 很好，我们的客人告诉我你在那里做得非常出色...他还问你现在是否可以归还性玩具？"], multiple=True, sound=s_vibro)
     add_dialogue("task failure", "toy", ["[girl.name] 不习惯性玩具的大小和形状，她完全不会使用它。她甚至不能把自己弄湿。", "g: 真是无能！我还以为你是职业选手呢！ *生气的*"], multiple=True)
 
