@@ -3912,7 +3912,7 @@ screen district_button(dis, context):
 
             spacing 10
 
-            text location_name_dict[dis.name] size res_font(14) xalign 0.5 yalign 0.5
+            text "{b}" + location_name_dict[dis.name] + "{/b}" size res_font(14) xalign 0.5 yalign 0.5
 
             fixed:
                 fit_first True
@@ -3949,9 +3949,9 @@ screen visit_district():
     key "K_RIGHT" action (SetVariable('selected_district', get_next(available_districts, selected_district, loop=True)), Jump("visit_district"))
 
     if len(available_districts) > 1:
-        textbutton "<" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_district', get_previous(available_districts, selected_district, loop=True)), Jump("visit_district")) tooltip "访问上一个地区（也可以使用←方向键）。"
+        textbutton "{b}<{/b}" xalign 0.05 ysize yres(120) yalign 0.4 action (SetVariable('selected_district', get_previous(available_districts, selected_district, loop=True)), Jump("visit_district")) tooltip "访问上一个地区（也可以使用←方向键）。"
 
-        textbutton ">" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_district', get_next(available_districts, selected_district, loop=True)), Jump("visit_district")) tooltip "访问下一个地区（也可以使用→方向键）。"
+        textbutton "{b}>{/b}" xalign 0.95 ysize yres(120) yalign 0.4 action (SetVariable('selected_district', get_next(available_districts, selected_district, loop=True)), Jump("visit_district")) tooltip "访问下一个地区（也可以使用→方向键）。"
 
     $ i = 1
     for loc in location_dict[selected_district.name]:
@@ -4009,7 +4009,7 @@ screen visit_district():
                                 add im.Scale("districts/locations/secret.webp", xres(150), yres(100)) # insensitive_alpha 0.33 idle_alpha 0.66 hover_alpha 1.0
 
                             else:
-                                text location_name_dict[location.name] size res_font(14) xalign 0.5
+                                text "{b}" + location_name_dict[location.name] + "{/b}" size res_font(14) xalign 0.5
 
                                 fixed:
                                     fit_first True
@@ -4043,7 +4043,7 @@ screen visit_district():
                                                 if location.menu_costs_AP:
                                                     tooltip __(location.menu[0]) + __(". Costs 1 {image=img_AP}.")
                                                 else:
-                                                    tooltip __(location.menu[0]) + "."
+                                                    tooltip __(location.menu[0]) + "。"
 
                                     text str(location_dict[selected_district.name].index(location) + 1) size res_font(14)  xalign 0.05 yalign 0.95
 
@@ -4362,7 +4362,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_adv_cost()
 
-                            textbutton "[brothel.advertising]广告女郎" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
+                            textbutton "[brothel.advertising]个 广告女郎" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.1 ypadding 6
 
                             $ ttip = __("Your brothel's current threat level is ") + brothel.estimate_threat_level() + "."
 
@@ -4386,7 +4386,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_sec_cost()
 
-                            textbutton "[brothel.security]驻场保镖" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
+                            textbutton "[brothel.security]个 驻场保镖" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.4 ypadding 6
 
 
 
@@ -4412,7 +4412,7 @@ screen brothel():
                                 $ text1 = ""
                             $ text2 = brothel.get_maintenance_cost()
 
-                            textbutton "[brothel.maintenance]家政清洁" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.7 ypadding 6
+                            textbutton "[brothel.maintenance]个 家政清洁" + text1 background None text_size res_font(14) xpos 0.6 ypos 0.7 ypadding 6
 
                         hbox xfill True spacing 10:
 

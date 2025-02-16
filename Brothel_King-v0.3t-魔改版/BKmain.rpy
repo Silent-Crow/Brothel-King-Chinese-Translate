@@ -179,7 +179,8 @@ label visit_district:
     $ tt = show_tt("top_right")
 
     scene black
-    show expression selected_district.get_pic(config.screen_width, res_event_height) at top
+    #show expression selected_district.get_pic(config.screen_width, res_event_height) at top
+    show expression selected_district.get_pic(config.screen_width, config.screen_height) at top
     show screen visit_district()
     with Dissolve(0.15)
 
@@ -225,7 +226,8 @@ label visit_location():
     $ renpy.start_predict_screen("visit_location", _next)
 
     scene black
-    show expression selected_location.get_pic(config.screen_width, res_event_height) at top
+    #show expression selected_location.get_pic(config.screen_width, res_event_height) at top
+    show expression selected_location.get_pic(config.screen_width, config.screen_height) at top
     show screen visit_location()
     with Dissolve(0.15)
 

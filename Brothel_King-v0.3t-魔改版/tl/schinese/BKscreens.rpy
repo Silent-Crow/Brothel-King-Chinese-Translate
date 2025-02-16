@@ -422,10 +422,6 @@ translate schinese strings:
     old "{/color} from girls/effects)"
     new "{/color}来自女孩天赋/其他效果)"
 
-    # game/BKscreens.rpy:4159
-    old "[brothel.maintenance]  cleaners"
-    new "[brothel.maintenance]  家政清洁"
-
     # game/BKscreens.rpy:4205
     old "Upgrade all your bedrooms for "
     new "花费"
@@ -1828,7 +1824,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6948
     old "{b}Facilities & Minions{/b}"
-    new "{b}训练设施与&仆从{/b}"
+    new "{b}训练设施&仆从{/b}"
 
     # game/BKscreens.rpy:6949
     old "{u}U{/u}se item"
