@@ -262,7 +262,7 @@ label slave_justify(girl, context):
             menu_list += [(ev.action, ev.type) for ev in ev_list if (ev.encourage and context == "reward") or (ev.discipline and context == "punish")]
 
         menu_list.append(("没有什么特殊原因", ""))
-        menu_list.append(("返回", "back"))
+        menu_list.append(("返 回", "back"))
 
     $ inter.reason = menu(menu_list)
 
@@ -1345,7 +1345,7 @@ label slave_remove_fixation(girl):
                 else:
                     menu_list.append((__(fix.name.capitalize()), fix))
 
-            menu_list.append(("返回", "back"))
+            menu_list.append(("返 回", "back"))
             renpy.say(you, "今天，我想让你克服...", interact=False)
             fix = menu(menu_list) # renpy.display_menu(menu_list)
 

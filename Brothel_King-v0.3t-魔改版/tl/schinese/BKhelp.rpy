@@ -2756,7 +2756,7 @@ translate schinese strings:
 
     # game/BKhelp.rpy:1892
     old "Go back"
-    new "返回"
+    new "返 回"
 
     # game/BKhelp.rpy:2124
     old "Test event"

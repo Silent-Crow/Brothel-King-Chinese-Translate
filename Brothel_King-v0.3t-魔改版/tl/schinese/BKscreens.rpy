@@ -506,10 +506,6 @@ translate schinese strings:
     old "Restock this shop's inventory for %s gold (available once a day)."
     new "用 %s 金币刷新商店(一天限一次)。"
 
-    # game/BKscreens.rpy:5610
-    old "Upgrade this shop's inventory (+%s %s item%s) for %s %s."
-    new "扩容货架(+%s %s件商品%s)消耗%s个%s。"
-
     # game/BKscreens.rpy:5348
     old "Upgrade shop"
     new "扩容商店"
@@ -692,7 +688,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:8925
     old "Hide"
-    new "隐藏"
+    new "隐 藏"
 
     # game/BKscreens.rpy:8925
     old "Rename"
@@ -797,14 +793,6 @@ translate schinese strings:
     # game/BKscreens.rpy:882
     old "{/b} is being held ("
     new "{/b}正被关押("
-
-    # game/BKscreens.rpy:1325
-    old "Click to allow "
-    new "点击以接待"
-
-    # game/BKscreens.rpy:1328
-    old "Click to block "
-    new "点击以拒绝服务"
 
     # game/BKscreens.rpy:1381
     old "Gizel thinks she will accept this training without causing trouble."

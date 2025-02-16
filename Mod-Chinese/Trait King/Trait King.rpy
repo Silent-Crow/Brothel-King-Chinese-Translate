@@ -525,7 +525,7 @@ label traitking_early_init:
 
                 Trait(_("Submissive"), verb="be", effects = [Effect("increase satisfaction", "fetish", 1, chance = 0.5), Effect("change", "obedience", 30),  Effect("personality", "masochist"), Effect("change", "valuation", +10)], archetype="The Slut", base_description = "她喜欢被支配。"),
                 Trait(_("Good kisser"), verb="be a", effects = [Effect("change", "libido", 20), Effect("increase satisfaction", "bisexual", 1, chance = 0.75)], archetype="The Escort", base_description = "她是个接吻高手。"),
-                Trait(_("Bisexual"), verb="be", effects = [Effect("increase satisfaction", "bisexual", 1), Effect("boost", "bisexual chance", 0.25), Effect("change", "valuation", +8)], base_description = "她喜欢取悦女士们，就像取悦男士们一样。"),
+                Trait(_("比翼双飞"), verb="be", effects = [Effect("increase satisfaction", "bisexual", 1), Effect("boost", "bisexual chance", 0.25), Effect("change", "valuation", +8)], base_description = "她喜欢取悦女士们，就像取悦男士们一样。"),
                 Trait(_("Orgy girl"), verb="be an", effects = [Effect("increase satisfaction", "group", 1), Effect("boost", "group chance", 0.25), Effect("change", "valuation", +8)], archetype="The Slut", base_description = "她想让你和你所有的朋友高兴。"),
 
                 Trait(_("Happy-go-lucky"), verb="be", effects = [Effect("change", "mood", 4), Effect("personality", "sweet")], archetype="The Bride", base_description = "没有什么能让她失望。"),

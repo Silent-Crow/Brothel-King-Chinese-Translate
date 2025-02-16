@@ -1767,7 +1767,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
                     key "K_HOME" action SetScreenVariable("page", 0)
                     key "K_END" action SetScreenVariable("page", max_page)
 
-                    textbutton "返回" action ShowMenu("galleries") xalign 0.5
+                    textbutton "返 回" action ShowMenu("galleries") xalign 0.5
 
 
 screen _gallery:

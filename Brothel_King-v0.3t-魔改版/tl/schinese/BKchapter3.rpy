@@ -292,25 +292,25 @@ translate schinese c3_interrogate_contacts_4b4ad2b3:
 translate schinese c3_interrogate_contacts_2b4490a9:
 
     # willow "But you could get it, you know, just in case? For 100,000 gold?"
-    willow "你还是可以买一个，以防万一？10万金币怎么样？"
+    willow "你还是可以买一个，以防万一？十万金币怎么样？"
 
 # game/BKchapter3.rpy:268
 translate schinese c3_interrogate_contacts_bf712700:
 
     # you "100,000 GOLD!!!" with vpunch
-    you "10万金币！！！" with vpunch
+    you "十万金币！！！" with vpunch
 
 # game/BKchapter3.rpy:270
 translate schinese c3_interrogate_contacts_4eb807db:
 
     # willow "Alright, sheesh, don't yell... 10,000 gold then?"
-    willow "好啦，别这么大声...那10,000金币呢？"
+    willow "好啦，别这么大声...那一万金币呢？"
 
 # game/BKchapter3.rpy:272
 translate schinese c3_interrogate_contacts_0d05c381:
 
     # you "10,000 GOLD!!!" with vpunch
-    you "10000金币！！！" with vpunch
+    you "一万金币！！！" with vpunch
 
 # game/BKchapter3.rpy:305
 translate schinese c3_interrogate_contacts_dae0ec55:
@@ -322,7 +322,7 @@ translate schinese c3_interrogate_contacts_dae0ec55:
 translate schinese c3_interrogate_contacts_54ddeb84:
 
     # you "Wait. Did you just give me a 90 per cent rebate right off the bat? Why?"
-    you "等等...你不是一下子就打了折吗？为什么？"
+    you "等等...你是不是一下子就打了一折？为什么？"
 
 # game/BKchapter3.rpy:309
 translate schinese c3_interrogate_contacts_415eac50:
@@ -334,7 +334,7 @@ translate schinese c3_interrogate_contacts_415eac50:
 translate schinese c3_interrogate_contacts_da69d051:
 
     # willow "Fine, Mister Negotiator, you can have it for 1,000 gold! But that's final!"
-    willow "好吧，专家谈判，那就1,000金币！比特币价格不变了！"
+    willow "好吧，谈判专家，那就一千金币！这可是我的底线了，不能再便宜了！"
 
 # game/BKchapter3.rpy:313
 translate schinese c3_interrogate_contacts_e74423a4:
@@ -346,7 +346,7 @@ translate schinese c3_interrogate_contacts_e74423a4:
 translate schinese c3_interrogate_contacts_f59ab4e1:
 
     # willow "Yes. I'm great at bargaining, don't you think? Because I think I rock!"
-    willow "我的砍价能力很厉害吧？因为{i}我{/i}超优秀这个！"
+    willow "我的砍价能力很厉害吧？因为{i}我{/i}超擅长这个！"
 
 # game/BKchapter3.rpy:317
 translate schinese c3_interrogate_contacts_510c9214:

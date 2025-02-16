@@ -467,12 +467,12 @@ init -10 python:
                         "sell" : "出售",
 
                     ## 一般选项 ##
-                        "Back" : "返回",
-                        "back" : "返回",
-                        "Hide" : "隐藏",
-                        "hide" : "隐藏",
-                        "Close" : "关闭",
-                        "close" : "关闭",
+                        "Back" : "返 回",
+                        "back" : "返 回",
+                        "Hide" : "隐 藏",
+                        "hide" : "隐 藏",
+                        "Close" : "关 闭",
+                        "close" : "关 闭",
                         "Next" : "下一个",
                         "next" : "下一个",
 
@@ -668,8 +668,8 @@ init -10 python:
                         "action" : "行动力",
                         "Mana" : "魔法值",
                         "mana" : "魔法值",
-                        "Wood" : "木头",
-                        "wood" : "木头",
+                        "Wood" : "木材",
+                        "wood" : "木材",
                         "Leather" : "皮革",
                         "leather" : "皮革",
                         "Dye" : "染料",
@@ -908,6 +908,16 @@ init -10 python:
                         None : "(origin_name_dict)没有值",
                         }
 
+    ## 商品品质名称 ##
+    qualities_name_dict = {
+                        "junk" : "劣等",
+                        "common" : "普通",
+                        "rare" : "稀有",
+                        "exceptional" : "极品",
+
+                        None : "(qualities_name_dict)没有值",
+                        }
+
     ## 访问城市界面 ##
     location_name_dict = {
                          ## 地区名称 ##
@@ -918,7 +928,7 @@ init -10 python:
                          "The Cathedra" : "教会辖地",
                          "The King's Hold" : "皇城禁地",
 
-                         "Spice market" : "黑市",
+                         "Spice market" : "黑 市",
                          "Sewers" : "下水道",
                          "Farm" : "乡间农场",
                          "Watchtower" : "瞭望塔",
@@ -932,11 +942,11 @@ init -10 python:
                          "Taverns" : "海滨酒馆",
                          "Exotic emporium" : "进口商场",
 
-                         "Market" : "集市",
-                         "Stables" : "马场",
-                         "Plaza" : "广场",
+                         "Market" : "集 市",
+                         "Stables" : "马 场",
+                         "Plaza" : "广 场",
                          "Gallows" : "行刑台",
-                         "Prison" : "监狱",
+                         "Prison" : "监 狱",
                          "Arena" : "竞技场",
 
                          "Botanical garden" : "温室花园",
@@ -950,7 +960,7 @@ init -10 python:
                          "Pilgrim road": "朝圣者之路",
                          "Banking quarter" : "金融街",
                          "Old ruins" : "远古遗迹",
-                         "Lakefront" : "湖畔",
+                         "Lakefront" : "湖 畔",
                          "Training ground" : "演武场",
                          "Cathedra" : "大教堂",
 
@@ -1623,7 +1633,7 @@ init -10 python:
     night_pics = ["night.webp",]
 
 
-    #! Temporary: New advertising pics will eventually be added
+    #! 临时的图片:以后会加新的
     advertising_pics = {1 : ["poster girls1.webp", "poster girls2.webp", "poster girls3.webp", "poster girls4.webp", "poster girls5.webp",
                         "poster girls6.webp", "poster girls7.webp", "poster girls8.webp", "poster girls9.webp", "poster girls10.webp",
                         "poster girls11.webp"]}

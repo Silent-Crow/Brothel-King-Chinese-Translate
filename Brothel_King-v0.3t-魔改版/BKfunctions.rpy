@@ -3336,7 +3336,7 @@ init -3 python:
             if condition_met:
                 menu_list.append((text1, act))
 
-        menu_list.append(("返回", "back"))
+        menu_list.append(("返 回", "back"))
 
         return menu_list
 

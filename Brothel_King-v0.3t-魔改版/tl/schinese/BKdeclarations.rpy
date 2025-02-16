@@ -20,7 +20,7 @@ translate schinese strings:
 
     # game/BKdeclarations.rpy:1805
     old "return"
-    new "返回"
+    new "返 回"
 
 # TODO: Translation updated at 2024-12-16 19:33
 

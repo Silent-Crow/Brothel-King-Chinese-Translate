@@ -2316,18 +2316,18 @@ init -2 python:
         def buy_furniture(self, furn):
 
             if self.current_building:
-                renpy.say(carpenter, "Sorry boss, I still have work to do on that " + self.current_building.name + " you ordered.")
+                renpy.say(carpenter, "对不起老板, 我还没弄好你要求的" + self.current_building.name + "呢。")
                 return False
 
             elif not furn.can_build():
                 if furn.built:
-                    renpy.say(carpenter, "You've got it already. I don't think you need a second one.")
-                renpy.say(carpenter, "Cannot build that for now, I'm 'fraid. You'd need a larger place.")
+                    renpy.say(carpenter, "你已经有一个了，我觉得你不需要第二个。")
+                renpy.say(carpenter, "现在还没法弄，我们恐怕得搬去一个更大的地方才行。")
                 return False
 
             for resource, amount in furn.cost:
                 if not MC.has_resource(resource, amount):
-                    renpy.say(carpenter, "Look, boss, you gotta have the right amount of resources before I can start the job.")
+                    renpy.say(carpenter, "老板，你最好在我开工之前准备好足够的材料，巧妇难为无米之炊啊。")
                     break
             else:
                 renpy.say(carpenter, __("A'right, looks like you've got the goods. Hand them over, and I'll get started on that ") + __(furn.name) + __(" right away."))

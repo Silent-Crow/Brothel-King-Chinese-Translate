@@ -78,8 +78,8 @@ label init_perks():
 
                              "裸体主义" : "这是女王的新衣，只有阳痿的人才看不到，你看不到吗？",
                              "雌牝母犬" : "汪汪！喵呜~你是猫派还是狗派？",
-                             "左搂右抱" : "想吃姐妹盖饭和母女盖饭吗？得加钱~",
-                             "左右开弓" : "三人行她也能轻松应对。可能会消耗额外的体力与最多两个客户发生性关系。",
+                             "Bisexual" : "想吃姐妹盖饭和母女盖饭吗？得加钱~",
+                             "Group" : "三人行她也能轻松应对。可能会消耗额外的体力与最多两个客户发生性关系。",
                              "欲女心经" : "真是个婊子!她身上每个地方都瘙痒难耐。可能与最多三个顾客发生性关系，这将消耗更多的体力。",
                              }
 
@@ -149,8 +149,8 @@ label init_perks():
 
         naked_perk = Perk("裸体主义", type="sex", effects = [Effect("special", "naked", 1)])
         pony_perk = Perk("雌牝母犬", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
-        bis_perk = Perk("绝代双骄", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
-        group_perk = Perk("左搂右抱", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
+        bis_perk = Perk("Bisexual", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
+        group_perk = Perk("Group", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
         orgy_perk = Perk("欲女心经", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
 
 

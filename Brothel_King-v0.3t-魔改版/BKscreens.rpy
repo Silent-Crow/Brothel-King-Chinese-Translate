@@ -126,6 +126,7 @@ image img_strip club = ProportionalScale("brothels/rooms/strip club.webp", xres(
 image img_onsen = ProportionalScale("brothels/rooms/onsen.webp", xres(192), yres(108))
 image img_okiya = ProportionalScale("brothels/rooms/okiya.webp", xres(192), yres(108))
 
+
 ## CUSTOM STYLES
 
 init:
@@ -1322,10 +1323,10 @@ screen girl_fast_actions(girl, notebook=True, love_fear=True, schedule=True, cus
                     if brothel.get_effect("allow", pop.name):
                         if girl.refused_populations[pop.name]:
                             $ X_text = "{b}X{/b}"
-                            $ ttip = _("Click to allow ") + pop.description
+                            $ ttip = "点击允许接待" + pop.description
                         else:
                             $ X_text = ""
-                            $ ttip = _("Click to block ") + pop.description
+                            $ ttip = "点击拒绝服务" + pop.description
                         button xsize xres(25) ysize yres(25) xmargin 0 xpadding 0 ymargin 0 ypadding 0 background None yalign 0.5:
                             at alpha_transform
                             action (ToggleDict(girl.refused_populations, pop.name), girl.customer_populations_safety_check(pop.name))
@@ -1997,23 +1998,23 @@ screen girl_stats(girl, context = "girls"): # context can be girls, slavemarket,
                         else:
                             $ text1 = ""
 
-                        #if girl.has_perk(act.capitalize()):
+                        if girl.has_perk(act.capitalize()):
 
-                        button xpadding 0 ypadding 0 xmargin 0 ymargin 0 yalign 1.0 background None action NullAction() hovered Show("sex_details", girl=girl) unhovered Hide("sex_details"):
-                            hbox spacing 5:
-                                textbutton text1:
-                                    text_font "1.ttf"
-                                    text_size res_font(12)
-                                    xsize yres(35)
-                                    ysize yres(20)
-                                    ypos -0.1
-                                    if not girls_firstvisit:
-                                        action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
+                            button xpadding 0 ypadding 0 xmargin 0 ymargin 0 yalign 1.0 background None action NullAction() hovered Show("sex_details", girl=girl) unhovered Hide("sex_details"):
+                                hbox spacing 5:
+                                    textbutton text1:
+                                        text_font "1.ttf"
+                                        text_size res_font(12)
+                                        xsize yres(35)
+                                        ysize yres(20)
+                                        ypos -0.1
+                                        if not girls_firstvisit:
+                                            action (SetVariable("selected_girl", girl), SetVariable("selected_sex_act", act), Return("sex_act"))
 
-                                    hovered (tt.Action(_("这将允许她为客人提供{b}") + act + _("服务{/b}。她必须激活至少一项常规性服务。")), Show("sex_details", girl=girl))
-                                    unhovered Hide("sex_details")
-                                text girl_related_dict[act] layout "nobreak": #preference_color[pref] % stat.name:
-                                    size res_font(12)
+                                        hovered (tt.Action(_("这将允许她为客人提供{b}") + act + _("服务{/b}。她必须激活至少一项常规性服务。")), Show("sex_details", girl=girl))
+                                        unhovered Hide("sex_details")
+                                    text girl_related_dict[act] layout "nobreak": #preference_color[pref] % stat.name:
+                                        size res_font(12)
 
                 if context == "slavemarket":
                     $ ttip = __(experienced_description[girl.sexual_experience + " ttip"]) + __(" Prior training may make a girl more suitable for sex acts.")
@@ -3735,7 +3736,7 @@ screen suzume_hints(contact_list):
                     else:
                         tooltip "让云雀向{b}%s{/b}打听，看看能否获得一些女忍者的线索。{b}消耗1{/b}{image=img_AP}。" % ttip
 
-            textbutton "返回" text_bold True xalign 0.5 yalign 0.5 xsize xres(120) ysize yres(120) xpadding 6 ypadding 6 action Return(False) # Note that 'None' is not a valid return value
+            textbutton "返 回" text_bold True xalign 0.5 yalign 0.5 xsize xres(120) ysize yres(120) xpadding 6 ypadding 6 action Return(False) # Note that 'None' is not a valid return value
 
 
         hbox spacing 50 xalign 0.5:
@@ -3773,7 +3774,7 @@ screen districts(context = "visit"): # returns a chosen district. Context can be
 
     frame:
         background "bg zan"
-        xysize (config.screen_width, int(config.screen_height*0.8))
+        xysize (config.screen_width, int(config.screen_height*0.8)) #原本为height*0.8
         xfill True
         yfill True
 
@@ -3963,7 +3964,7 @@ screen visit_district():
         $ i += 1
 
     fixed:
-        xysize (config.screen_width, int(config.screen_height*0.8))
+        xysize (config.screen_width, int(config.screen_height*0.8)) #原本为height*0.8
         xfill True
         yfill True
 
@@ -4076,7 +4077,7 @@ screen visit_location():
 
     frame:
         background None # loc.get_pic(config.screen_width, int(config.screen_height*0.8))
-        xysize (config.screen_width, int(config.screen_height*0.8))
+        xysize (config.screen_width, int(config.screen_height*0.8)) #原本为height*0.8
         xfill True
         yfill True
 
@@ -4649,8 +4650,8 @@ screen furniture():
                         button xfill False yfill False xalign 0.5 yalign 0.5 background None:
                             action NullAction()
                             tooltip (brothel.current_building.description + "\n" + str(dur) + __(" day(s) to complete."))
-                            add brothel.current_building.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
-                            text str(dur) + "天" xalign 1.0 yalign 0.0 size res_font(18)
+                            add brothel.current_building.pic.get(*res_tb(95)) xalign 0.5 yalign 0.5  #res tb原为50，修改为95
+                            text str(dur) + "天" xalign 0.9 yalign 0.5 size res_font(24)
                     else:
                         text "没有正在建造或升级的设施。" italic True size res_font(14)
 
@@ -4658,10 +4659,10 @@ screen furniture():
 
         if brothel.furniture:
             frame xfill True background c_ui_brown:
-                has hbox spacing 6 box_wrap True
+                has hbox spacing 15 box_wrap True
                 for furn in brothel.furniture:
-                    button background c_ui_brown action NullAction() tooltip furn.description xsize xres(52) ysize yres(44) xpadding 0 ypadding 0:
-                        add furn.pic.get(xres(48), yres(40)) xalign 0.5 yalign 0.5
+                    button background c_ui_brown action NullAction() tooltip furn.description xsize xres(78) ysize yres(66) xpadding 0 ypadding 0:  #xres 52  yres 44
+                        add furn.pic.get(xres(60), yres(50)) xalign 0.5 yalign 0.5 #X原为48，Y原为40
 
         text "设施菜单" drop_shadow (2, 2) size res_font(18)
 
@@ -4670,7 +4671,7 @@ screen furniture():
                 mousewheel True
                 draggable True
                 scrollbars "vertical"
-                ysize 0.6
+                ysize 0.9
                 yfill True
 
                 has vbox
@@ -5540,7 +5541,7 @@ screen shortcuts():
 
 ## Close button
 
-screen close(act, name="返回", ttip="Click to go back (or use right-click)."):
+screen close(act, name="返 回", ttip="Click to go back (or use right-click)."):
 
     textbutton name:
 
@@ -5611,7 +5612,8 @@ screen restock_button(merc, upgrade=False):
         if upgrade == True and merc.can_upgrade():
             $ chapter, cost, upgrade = shop_upgrades[merc.upgrade_level + 1]
 
-            $ ttip = __("Upgrade this shop's inventory (+%s %s item%s) for %s %s.") % (str(upgrade[1]), upgrade[0], plural(upgrade[1]), str(cost[1]), cost[0])
+            #$ ttip = "Upgrade this shop's inventory (+%s %s item%s) for %s %s." % (str(upgrade[1]), upgrade[0], plural(upgrade[1]), str(cost[1]), cost[0]) 源代码
+            $ ttip = "消耗%s个单位的%s扩容商店货架，每周增加%s件%s的随机商品。" % (str(cost[1]), misc_name_dict[cost[0]], str(upgrade[1]), qualities_name_dict[upgrade[0]])
 
             textbutton __("Upgrade shop") text_size res_font(18) tooltip ttip:
                 if MC.has_resource(*cost):
@@ -7477,7 +7479,7 @@ screen resource_exchange():
                 has hbox xfill True yfill True spacing 10
                 add ProportionalScale("UI/coin.webp", *res_tb(40)) yalign 0.5
                 hbox spacing 6 xfill True yalign 0.5:
-                    text __("Gold") size res_font(18)
+                    text "金币" size res_font(18)
                     text '{:,}'.format(round_int(MC.gold)) xalign 1.0 size res_font(16)
 
 
@@ -7492,7 +7494,7 @@ screen resource_exchange():
                         add resource.pic.get(*res_tb(40)) yalign 0.5
                         vbox xfill True spacing 6 yalign 0.5:
                             hbox spacing 3:
-                                text resource.name.capitalize() size res_font(18)
+                                text resource.name size res_font(18) #源代码为text resource.name.capitalize()
                                 if r in calendar.discounted:
                                     text "▼" size res_font(14) yalign 0.5 font "1.ttf"
                                 elif r in calendar.scarce:
@@ -8228,7 +8230,7 @@ screen girl_mix(show_rating=False):
                         action renpy.curried_invoke_in_new_context(delete_mix, persistent.active_mix)
                 textbutton "全部添加" action Function(add_all_to_mix, persistent.active_mix) text_size res_font(18)
                 textbutton "移除全部" action Function(remove_all_from_mix, persistent.active_mix) text_size res_font(18)
-                textbutton "返回" action Return() text_size res_font(18)
+                textbutton "返 回" action Return() text_size res_font(18)
 
         frame background c_darkorange xfill True yfill True:
             if GetTooltip():
@@ -8316,7 +8318,7 @@ screen achievements(main=False):
                         textbutton "清空成就 (%s)" % (event_color["bad"] % "CONFIRM") text_size res_font(14) ysize yres(36) xalign 0.0 yalign 0.0:
                             action (Function(reset_achievements), SetScreenVariable("confirm_reset", False))
 
-                    textbutton "返回"  ysize yres(36):
+                    textbutton "返 回"  ysize yres(36):
                         if main:
                             action ShowMenu("galleries")
                         else:

@@ -569,4 +569,3 @@ translate schinese strings:
     # game/BKclasses.rpy:4876
     old "Notorious"
     new "高难度"
-

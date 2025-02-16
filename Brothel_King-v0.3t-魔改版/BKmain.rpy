@@ -1968,7 +1968,7 @@ label visit_merchant_loop():
                         if right_focus.can_upgrade():
                             $ right_focus.char("如果你给我带来更多的材料，我就能继续扩大店面了，我看好你哟!")
                 else:
-                    $ right_focus.char("You do not have the necessary resources with you.{w=0.8}{nw}")
+                    $ right_focus.char("看来你没有准备好足够的材料。{w=0.8}{nw}")
 
             elif act == "back":
                 # Stella reward events
