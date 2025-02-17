@@ -111,8 +111,8 @@ translate schinese strings:
     new "接吻大师"
 
     # game/Mods/Trait King/Trait King.rpy:518
-    old "Bisexual"
-    new "比翼双飞"
+    #old "Bisexual"
+    #new "比翼双飞"
 
     # game/Mods/Trait King/Trait King.rpy:518
     old "Orgy girl"

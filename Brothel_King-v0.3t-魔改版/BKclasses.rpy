@@ -1943,52 +1943,52 @@ init -2 python:
 
         def get_reputation_comment(self, chg):
 
-            # Get random comment
+            # Get random comment #客户评价
 
             if self.base_rating == 0:
-                comment = rand_choice([__("I came here for nothing."), __("I didn't get attended at all."), __("What a disgrace. I wasted my time here."), __("No one attended me. Such a waste of time...")])
+                comment = rand_choice(["真是浪费老子的时间。", "根本没有人接待我。", "他妈的，白跑一趟。", "你们是瞎了看不到我吗？", "你们就是这样对待顾客的？", "信不信我找消费者协会举报你们。", "最起码给点免费的小礼品吧。"])
 
                 if chg < 0:
                     comment = event_color["bad"] % comment
 
             elif self.base_rating == 8:
-                comment = event_color["special contrast"] % rand_choice([__("I had the time of my life."), __("Everything was perfect."), __("Best night ever! I'm spent."), __("This place is amazing. Five stars!")])
+                comment = event_color["special contrast"] % rand_choice(["我很享受。", "我对你们的服务非常满意。", "这真是最棒的一夜了。", "不错，我要给你五星好评！", "我会把这里安利给兄弟们的。", "再接再厉，这家店很有前途。"])
 
             else:
                 pos_comments = []
                 neg_comments = []
 
                 if self.service_dict["entertained"] >= 2:
-                    pos_comments.append(__("I saw a really great performance."))
+                    pos_comments.append("真是精彩的表演。", "今晚令我印象深刻。", "我还会再来的，给我留好位子。", "你们这能不能办贵宾卡？")
                 elif self.service_dict["entertained"] == 1:
-                    pos_comments += [__("I got some entertainment."), __("I was entertained while waiting."), __("A girl performed for me.")]
-                    neg_comments.append(__("The entertainer could have been better."))
+                    pos_comments += ["服务态度还不错。", "没算白跑一趟。", "有个小妞接待了我。"]
+                    neg_comments.append("你们的服务态度还敢再差一点吗？", "最好别有下次了。", "你怎么好意思收这么多钱。", "真是无聊透顶。")
                 else:
-                    neg_comments += [__("There was no entertainment."), __("I was bored while waiting."), __("No entertainment. Boooring...")]
+                    neg_comments += ["早点关门算了。", "就你们这样也配开店？", "你得赔偿我精神损失费！", "我劝你找个班上吧。"]
 
                 if self.service_dict["laid"] >= 2:
-                    pos_comments.append(__("The sex was really awesome."))
+                    pos_comments.append("她都快把我榨干了。", "事后一根烟，赛过活神仙啊！", "我这辈子非她不娶了。", "我在床上颠鸾倒凤。")
                 elif self.service_dict["laid"] == 1:
-                    pos_comments += [__("I got laid."), __("A whore took care of me."), __("I had %s.") % __(self.got_sex_act)]
-                    neg_comments.append(__("The sex could have been better."))
+                    pos_comments += ["玩得还算尽兴吧。", "那个骚货的身材真不错。", "她的%s技术还不错。" % self.got_sex_act]
+                    neg_comments.append("她还是个新手吧。", "她差点弄疼我了。", "她连基础的要求都满足不了。", "我今晚很不满意。")
                 else:
-                    neg_comments += [__("No whores! What kind of brothel is this?"), __("I couldn't find a whore. So frustrating."), __("Couldn't get laid, damn it!"), __("Where are the whores? Hello?")]
+                    neg_comments += ["不卖身你也好意思叫自己妓女?", "我连妓女的影子都看不到。", "我裤子都脱了，你告诉我不提供服务!", "房间里有人吗，我是不是来错店了?"]
 
                 if self.service_dict["both"] > 1:
-                    pos_comments.append(__("I got both sex and entertainment."))
+                    pos_comments.append("荤素搭配，真是令人愉悦。", "她很润，外面和里面都是。", "真是个迷人的小妖精。", "她勾起了我的欲火。")
 
                 if self.service_dict["favorite entertainment"] >= 1:
-                    pos_comments.append(__("I got my favorite entertainment while waiting."))
+                    pos_comments.append("这里的饭菜很合我胃口。", "老板你这里的酒味道不错啊。", "那个小妞的裙子再短一点就更完美了。", "按摩的力度刚刚好。", "演出很精彩。")
                 else:
-                    neg_comments.append(__("My favorite entertainment was unavailable."))
+                    neg_comments.append("真是叫人没胃口。", "过期的东西也好意思上？", "穿这么严实你防谁呢。", "就你这动作我给6分都算高的了。", "拙劣的表演让我昏昏欲睡。")
 
                 if self.service_dict["favorite sex act"] > 1:
-                    pos_comments.append(__("I got my favorite sex act."))
+                    pos_comments.append("真是性癖大满足。", "她就是我的菜。", "她让我为之着迷。", "下次我会吃过药再来的。")
                 else:
-                    neg_comments.append(__("My favorite sex act was unavailable."))
+                    neg_comments.append("可惜她不是我的菜。", "我对这种玩法不感兴趣。", "她就只会这几招吗？", "她不行就换一个。")
 
                 if self.service_dict["extra"] > 1:
-                    pos_comments.append(__("Sex is better with more people!"))
+                    pos_comments.append("独乐乐不如众乐乐!", "我是个乐于分享的人。", "人人有份，真不错。", "参与感拉满了，兄弟。")
 
                 if chg > 0:
                     comment = event_color["good"] % __(rand_choice(pos_comments))
