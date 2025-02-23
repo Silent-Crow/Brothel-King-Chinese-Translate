@@ -86,12 +86,12 @@ init -1 python:
     chris_jobmod_template = Mod(
         
                 ## Basic mod information (Important: Version is used to check for new versions of the mod. Failure to update the version number may lead to broken mods and saved games)
-                name = "克里斯的工作模组PLUS",
+                name = "工作模组Plus",
                 folder = "ChrisJobMod",
-                creator = "Chris12/Ch12, 由Jman优化",
+                creator = "Chris12, ",
                 version = 2.34J,
                 pic = "titleJobMod.png",
-                description = """克里斯的工作模组PLUS在工作模组的基础上进行了修改调整。它能使不同的工作和性行为之间有所区分，并将它们置于某种等级制度中。还包括一些其他的小的调整。\n 模组注意事项\n\n {color=[c_red]}请{b}不要{/b}同时安装克里斯的工作模组和克里斯的工作模组PLUS!{/color}
+                description = """克里斯的工作模组PLUS在工作模组的基础上进行了修改调整，由Jman优化改良。它能使不同的工作和性行为之间有所区分，并将它们置于某种等级制度中。还包括一些其他的小的调整。\n 模组注意事项\n\n {color=[c_red]}请{b}不要{/b}同时安装克里斯的工作模组和克里斯的工作模组PLUS!{/color}
                 \n\n 克里斯的工作模组对各个职业做了一些修改，最明显的是持久的满意度传递效应。\n妓女招待不周时，会受到一定的惩罚，但如果服务质量令人满意，也会得到奖励。也有一些修改，使他们彼此之间产生区别。
                 \n可以在游玩中途安装本Mod\n\n {b}禁用模组{u}之前{/u}请点击右上角的“？”按钮，选择 "Mods"然后点击"[[Chris Job Mod] 停用" !{/b}\n\n 如果你反悔了又想启动模组, 或是更新模组, 还是“？”里的老地方，点击"[[Chris Job Mod] 启动/更新"。""",
                 

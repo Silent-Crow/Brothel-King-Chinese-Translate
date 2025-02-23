@@ -292,7 +292,7 @@ init -2 python:
             for g in self.free_girls:
                 l.append(g.name)
 
-            return "Free girls: " + and_text(l)
+            return "自由女孩: " + and_text(l)
 
         def get_available_locations(self):
             loc_list = []

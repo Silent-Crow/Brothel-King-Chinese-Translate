@@ -424,7 +424,7 @@ translate schinese slave_chat_tastes_a56a4d9b:
 translate schinese slave_chat_tastes_b8bca4cc:
 
     # girl.char "My tastes don't matter, Master [MC.name]. I'm just here to do your bidding. *blush*"
-    girl.char "我的想法不重要，[MC.name]主人。 我只是你的一个奴隶。 *脸红*"
+    girl.char "我的想法不重要，[MC.name]。 我只是你的一个奴隶。 *脸红*"
 
 # game/BKinteractions.rpy:907
 translate schinese slave_chat_tastes_46f4f913:
@@ -3812,7 +3812,7 @@ translate schinese slave_story4_397e68e9:
 translate schinese slave_story4_4e8eeb14:
 
     # girl.char "Yes, Master [MC.name]..."
-    girl.char "是的，[MC.name]主人...."
+    girl.char "是的，[MC.name]...."
 
 # game/BKinteractions.rpy:4250
 translate schinese slave_story4_f8088ea1:
@@ -3824,7 +3824,7 @@ translate schinese slave_story4_f8088ea1:
 translate schinese slave_story4_6533823a:
 
     # girl.char "Oh, Master [MC.name], hello!"
-    girl.char "噢，[MC.name]主人，你好！"
+    girl.char "噢，[MC.name]，你好！"
 
 # game/BKinteractions.rpy:4254
 translate schinese slave_story4_4ad489aa:
@@ -4064,7 +4064,7 @@ translate schinese slave_story4_2bde40cf:
 translate schinese slave_story4_e40f7bf8:
 
     # girl.char "Oh, Master [MC.name]... I was just... Yesterday night was quite tiring, and..."
-    girl.char "哦，[MC.name]主人....我只是....昨天晚上很累，而且...."
+    girl.char "哦，[MC.name]....我只是....昨天晚上很累，而且...."
 
 # game/BKinteractions.rpy:4351
 translate schinese slave_story4_33f80bf7:
@@ -5494,7 +5494,7 @@ translate schinese slave_story6_f6e45f00:
 translate schinese slave_story6_de4e2907:
 
     # girl.char "Oh, Master [MC.name]! This is a disaster! Look at this!"
-    girl.char "哦，[MC.name]主人！这简直是一场灾难！看看这个！"
+    girl.char "哦，[MC.name]！这简直是一场灾难！看看这个！"
 
 # game/BKinteractions.rpy:4928
 translate schinese slave_story6_6c2bf18c:
@@ -6353,7 +6353,7 @@ translate schinese slave_story7_35f4fe92:
 translate schinese slave_story7_05e96c00:
 
     # girl.char "You're right, Master [MC.name]... That's why I chose to become a slave."
-    girl.char "你说得对，[MC.name]主人....这就是为什么我选择成为一个奴隶。"
+    girl.char "你说得对，[MC.name]....这就是为什么我选择成为一个奴隶。"
 
 # game/BKinteractions.rpy:5194
 translate schinese slave_story7_f1cf0c2d:
@@ -8829,7 +8829,7 @@ translate schinese slave_story_help_4ad6ee99:
 translate schinese slave_story_help_a38221ab:
 
     # girl.char "Really? Thank you so much, Master [MC.name]!"
-    girl.char "真的吗？非常感谢您，[MC.name]主人！"
+    girl.char "真的吗？非常感谢您，[MC.name]！"
 
 # game/BKinteractions.rpy:6302
 translate schinese slave_story_help_1283a873_9:
@@ -9075,7 +9075,7 @@ translate schinese slave_story_help_893b71a7:
 translate schinese slave_story_help_6d7948f1:
 
     # girl.char "You would? Oh, Master [MC.name]! I... I don't know what to say!"
-    girl.char "你会吗？哦，[MC.name]主人！我....我不知道该说什么！"
+    girl.char "你会吗？哦，[MC.name]！我....我不知道该说什么！"
 
 # game/BKinteractions.rpy:6477
 translate schinese slave_story_help_4039b54b:
@@ -9369,7 +9369,7 @@ translate schinese slave_story_help_9e8fe105:
 translate schinese slave_story_help_faee0bc3:
 
     # girl.char "Yes, Master [MC.name]... I'm a filthy sex slave... I'll cum on your orders, please give me a load of warm cum!"
-    girl.char "是的，[MC.name]主人....我是个肮脏的性奴隶....我会照做的，请把滚烫的精液射给我吧！"
+    girl.char "是的，[MC.name]....我是个肮脏的性奴隶....我会照做的，请把滚烫的精液射给我吧！"
 
 # game/BKinteractions.rpy:6685
 translate schinese slave_story_help_e72da05e:

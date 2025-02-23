@@ -55,7 +55,7 @@ label free_girl_talk(girl):
 
         $ MC.interactions -= 1
 
-        $ text1 = rand_choice(("当你漫步在%s时，", "在你前往%s的途中, ", "当你心不在焉地在%s闲逛时，")) % __(uncapitalize(selected_location.name))
+        $ text1 = rand_choice(("当你漫步在%s时，", "在你前往%s的途中, ", "当你心不在焉地在%s闲逛时，")) % location_name_dict[selected_location.name]
 
         $ text1 += rand_choice(("你发现一个孤身一人的漂亮的女孩。", "你差点撞到一个可爱的少女。", "你看到一个美丽的女孩在和一个小贩讨价还价。", "你看到一个美丽的女孩，看起来很迷茫。"))
 

@@ -2040,7 +2040,7 @@ translate schinese strings:
 
     # game/kite_jobgirl 2_beach.rpy:459
     old "Pull out your cock"
-    new "拿出你的肉棒"
+    new "掏出你的肉棒"
 
     # game/kite_jobgirl 2_beach.rpy:459
     old "Don't indulge her"

@@ -7721,9 +7721,9 @@ screen mods():
                             has vbox
                             text selected_mod.full_name size res_font(24) bold True color c_darkorange
                             if selected_mod.active:
-                                text __("(Active)") color c_emerald
+                                text "(已激活)" color c_emerald
                             else:
-                                text __("(Inactive)") color c_grey
+                                text "(未激活)" color c_grey
 
                             null height yres(16)
                         
@@ -7734,9 +7734,9 @@ screen mods():
                                 
                                 vbox xfill True:
                                     if selected_mod.pic:
-                                        frame xsize xres(250) background None:
-                                            add selected_mod.pic.get() fit "contain"
-
+                                        frame xsize xres(350) background None:
+                                            add selected_mod.pic.get() fit "contain" 
+                                                
                                     null height yres(16)
 
                                     text selected_mod.description size res_font(14) color c_brown

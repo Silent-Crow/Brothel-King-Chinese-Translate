@@ -964,7 +964,8 @@ translate schinese kidnap_tip_7423ebaa:
 translate schinese kidnap_rescue_62968ca6:
 
     # "You reach the [loc]. This is where [girl.fullname] is being held."
-    "你火速前往[loc]。这里就是[girl.fullname]被关押的地方。"
+    $ [loc_cn] = tl_cn(loc, location_name_dict)
+    "你火速前往[loc_cn]。这里就是[girl.fullname]被关押的地方。"
 
 # game/BKsecurity.rpy:1727
 translate schinese kidnap_rescue_5c5d18ea:

@@ -1846,7 +1846,7 @@ translate schinese renza_onsen2_5a1fe722:
 translate schinese renza_onsen2_94c98a09:
 
     # sill "Y-Yes, Master [MC.name]..."
-    sill "是、是的,[MC.name]主人..."
+    sill "是、是的,[MC.name]..."
 
 # game/BKstory_events.rpy:970
 translate schinese renza_onsen2_ce853948:
@@ -10762,7 +10762,8 @@ translate schinese stella_reward3_61742606:
 translate schinese stella_invitation_9099d6ce:
 
     # "Walking through a small alley leading to the [loc], you spot something on the pavement."
-    "穿过通向[loc]的小巷,你注意到地上有件东西。"
+    $ [loc_cn] = tl_cn(loc, location_name_dict)
+    "穿过通向[loc_cn]的小巷,你注意到地上有件东西。"
 
 # game/BKstory_events.rpy:5442
 translate schinese stella_invitation_c8908eb0:
@@ -13966,7 +13967,8 @@ translate schinese farm_meet_willow_ad737ba2:
 translate schinese willow_fight_a20d861b:
 
     # "Exploring the outskirts of the [loc], you notice something strange."
-    "探索[loc]的郊区时,你发现了一些奇怪的东西。"
+    $ [loc_cn] = tl_cn(loc, location_name_dict)
+    "探索[loc_cn]的郊区时,你发现了一些奇怪的东西。"
 
 # game/BKstory_events.rpy:7043
 translate schinese willow_fight_670e675f:
@@ -27562,7 +27564,7 @@ translate schinese no_money_97eec849:
 translate schinese no_money_72e86c82:
 
     # banker "Ah, you must be the owner, [MC.name], isn't it?"
-    banker "啊,你一定就是[MC.name]主人了吧?"
+    banker "啊,你一定就是[MC.name]了吧?"
 
 # game/BKstory_events.rpy:14138
 translate schinese no_money_c7b74812:

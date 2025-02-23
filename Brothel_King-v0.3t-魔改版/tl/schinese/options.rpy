@@ -6,5 +6,5 @@ translate schinese strings:
 
     # game/options.rpy:15
     old "Bro King"
-    new "青楼之王 V2025-2-16      翻译版本仅供学习交流，请勿用于商业用途"
+    new "青楼之王魔改版 V2025-2-20      翻译版本仅供学习交流，请勿用于商业用途"
 

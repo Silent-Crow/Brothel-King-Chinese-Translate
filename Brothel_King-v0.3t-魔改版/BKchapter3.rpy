@@ -107,7 +107,7 @@ label c3_suzume_hint(): # Happens after all three kunoichi hunts have been locke
 
 label c3_update_hint_goals():
     python:
-        for nin, channel in [(NPC_narika, "story"), (NPC_mizuki, "story2"), (NPC_narika, "story3")]:
+        for nin, channel in [(NPC_haruka, "story"), (NPC_mizuki, "story2"), (NPC_narika, "story3")]:
             # Unlocks hint recap with Suzume
             if nin.flags["hints"] >= 3:
                 if nin.flags["locked"]: # First call
@@ -1849,11 +1849,11 @@ label c3_papa_cells():
     show bg papa_freak at top
     with dissolve
 
-    if not NPC_freak.flags["requirements"]:
-        if NPC_freak.flags["cells built"] >= 4:
-            papa "I have built everything I could for you, young lad. It's nice of you to visit, though."
+    if NPC_freak.flags["cells built"] >= 4:
+        papa "I have built everything I could for you, young lad. It's nice of you to visit, though."
 
-        elif not NPC_freak.flags["requirements"]:
+    elif not NPC_freak.flags["requirements"]:
+        if not NPC_freak.flags["cells built"]:
             papa "So, for starters... I'm looking for a great cocksucker."
 
             papa_apprentice "Papa likes it wet and nice, uh..."
@@ -4629,7 +4629,7 @@ label c3_narika_MU_class():
 
         sill "(I can't believe it! He bought me! The enchantment worked!)"
 
-        $ MC.rand_say(["gd: 你好，小可爱。不要害怕。我叫[MC.name]。", "ne: 你好，我是你的新主人，叫我[MC.name]。", "ev: 起来，奴隶，现在你是我的人了，给我记好了。 以后要称呼我为[MC.name]主人。"])
+        $ MC.rand_say(["gd: 你好，小可爱。不要害怕。我叫[MC.name]。", "ne: 你好，我是你的新主人，叫我[MC.name]。", "ev: 起来，奴隶，现在你是我的人了，给我记好了。 以后要称呼我为主人。"])
 
         sill "H-Hello Master..."
 
@@ -13978,7 +13978,7 @@ label haruka_broken:
     haruka sad "(So this is my life, now... I wonder if I can get used to it.)"
 
     $ game.set_task(None, "story")
-    
+
     $ girl = create_girl("Haruka Takamori", force_original=True, level=10)
 
     call acquire_ninja(girl) from _call_acquire_ninja_1

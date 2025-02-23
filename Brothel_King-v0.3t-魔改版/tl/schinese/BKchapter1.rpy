@@ -268,7 +268,7 @@ translate schinese c1_meet_kosmo_31a1b906:
 translate schinese c1_meet_kosmo_467eee49:
 
     # you "Nope. Not that I'd really care to..."
-    you "没有,我也不太关心娱乐圈..."
+    you "没有,我平时不关注娱乐圈..."
 
 # game/BKchapter1.rpy:174
 translate schinese c1_meet_kosmo_c24e1f16:
@@ -280,7 +280,7 @@ translate schinese c1_meet_kosmo_c24e1f16:
 translate schinese c1_meet_kosmo_498b8490:
 
     # kosmo "I am the world-renowned chairman of 'HʘʘKERS', the largest, fastest-growing, highest-grossing brothel chain in Zan!"
-    kosmo "我就是著名的'妓你太美'公司董事长,这是泽恩最大、发展最快、盈利最高的红灯区连锁企业!"
+    kosmo "我就是著名的'妓你太美'公司董事长,这是泽恩最大、发展最快、市值最高的红灯区连锁企业!"
 
 # game/BKchapter1.rpy:178
 translate schinese c1_meet_kosmo_df028266:
@@ -292,7 +292,7 @@ translate schinese c1_meet_kosmo_df028266:
 translate schinese c1_meet_kosmo_20d48728:
 
     # kosmo "...and I was knighted by King Pharo the 1st in person! Everyone in Zan knows me, of course, but I shouldn't have expected anything else from a filthy foreigner."
-    kosmo "...法老王都亲自为我授勋!泽恩的每个人都认识我,当然,我也不指望你这个肮脏的外地乡巴佬会知道。"
+    kosmo "...法罗国王都亲自为我授勋!泽恩的每个人都认识我,当然,我也不指望你这个肮脏的外地乡巴佬会知道。"
 
 # game/BKchapter1.rpy:182
 translate schinese c1_meet_kosmo_4fafefca:
@@ -310,13 +310,13 @@ translate schinese c1_meet_kosmo_c467a596:
 translate schinese c1_meet_kosmo_232fda7a:
 
     # you "You've had your fun. Now fuck off. And don't come back."
-    you "你闹够了吗?现在滚开,别再来了。"
+    you "你闹够了吗?现在滚吧,别再来了。"
 
 # game/BKchapter1.rpy:194
 translate schinese c1_meet_kosmo_352f5ea1:
 
     # kosmo angry "Hey! You're addressing a Zan Lord! Don't forget your place, worm..." with vpunch
-    kosmo angry "嘿!这就是你对一位泽恩领主的态度!不要忘记你的身份,贱民..." with vpunch
+    kosmo angry "嘿!这就是你对泽恩大人物的态度？不要忘记你的身份,贱民..." with vpunch
 
 # game/BKchapter1.rpy:202
 translate schinese c1_meet_kosmo_fa0a20c0:
@@ -334,7 +334,7 @@ translate schinese c1_meet_kosmo_74d375b2:
 translate schinese c1_meet_kosmo_f88e9a5c:
 
     # you "Sill! Wake Drogon, will you?"
-    you "希露!去叫醒巨龙!"
+    you "希露!去把小龙喊来!"
 
 # game/BKchapter1.rpy:212
 translate schinese c1_meet_kosmo_f2fd650a:
@@ -358,7 +358,7 @@ translate schinese c1_meet_kosmo_e86a193a:
 translate schinese c1_meet_kosmo_d7f86092:
 
     # kosmo angry "Grrr..."
-    kosmo angry "咆哮..."
+    kosmo angry "咬牙..."
 
 # game/BKchapter1.rpy:226
 translate schinese c1_meet_kosmo_5d4d0e43:
@@ -370,7 +370,7 @@ translate schinese c1_meet_kosmo_5d4d0e43:
 translate schinese c1_meet_kosmo_85576e86:
 
     # sill "Master [MC.name]! Are you all right?"
-    sill "[MC.name]主人!你还好吗?"
+    sill "[MC.name]!你还好吗?"
 
 # game/BKchapter1.rpy:238
 translate schinese c1_meet_kosmo_79f93bac:
@@ -1864,7 +1864,7 @@ translate schinese c1_guards_visit_d09251df:
 translate schinese c1_thieves_guild_tip_9c669be6:
 
     # "After exploring the [loc] area for a couple of hours, you stop in a nearby tavern to slake your thirst."
-    "在[loc]区域探索了几个小时后,你在附近的酒馆里停下来解渴。"
+    "在[loc_cn]区域探索了几个小时后,你在附近的酒馆里停下来解渴。"
 
 # game/BKchapter1.rpy:1160
 translate schinese c1_thieves_guild_tip_3dd0a4c0:
@@ -12514,7 +12514,7 @@ translate schinese c1_ending_lieutenant_be340512:
 translate schinese c1_ending_lieutenant_599f1c87:
 
     # lieutenant "Oh, [MC.name]..."
-    lieutenant "哦,[MC.name]主人，给我大肉棒..."
+    lieutenant "哦,[MC.name]，给我大肉棒..."
 
 # game/BKchapter1.rpy:6685
 translate schinese c1_ending_lieutenant_eeee0816:

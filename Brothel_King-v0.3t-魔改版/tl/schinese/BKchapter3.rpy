@@ -3502,13 +3502,13 @@ translate schinese c3_unlock_narika_00c2ccb5:
 translate schinese c3_unlock_haruka_ff80931a:
 
     # suzume "So, I think we've gathered enough intel about the Earth ninja! What do you want to do?" nointeract
-    suzume "所以，我认为我们已经收集了足够的关于地球忍者的情报！你想让我做什么？" nointeract
+    suzume "所以，我认为我们已经收集了足够的关于大地忍者的情报！你想让我做什么？" nointeract
 
 # game/BKchapter3.rpy:1746
 translate schinese c3_unlock_haruka_31c20c70:
 
     # suzume normal "I think we've gathered enough intel about that stuck-up Earth ninja and her scheme!"
-    suzume normal "我想我们已经收集到足够的关于那个自以为是的地球忍者和她的计划的情报了！"
+    suzume normal "我想我们已经收集到足够的关于那个自以为是的大地忍者和她的计划的情报了！"
 
 # game/BKchapter3.rpy:1748
 translate schinese c3_unlock_haruka_91d7cce3:
@@ -9292,13 +9292,13 @@ translate schinese c3_narika_MU_class_530b176b:
 translate schinese c3_narika_MU_class_71d64b02:
 
     # sill "Master [MC.name]..."
-    sill "[MC.name]主人..."
+    sill "[MC.name]..."
 
 # game/BKchapter3.rpy:4642
 translate schinese c3_narika_MU_class_ed600918:
 
     # sill "Master [MC.name]... Aaah... [emo_heart]"
-    sill "[MC.name]主人...啊啊...[emo_heart]"
+    sill "[MC.name]...啊啊...[emo_heart]"
 
 # game/BKchapter3.rpy:4644
 translate schinese c3_narika_MU_class_9ac340a3:
@@ -9310,7 +9310,7 @@ translate schinese c3_narika_MU_class_9ac340a3:
 translate schinese c3_narika_MU_class_435e397f:
 
     # sill "Oh, erm, sorry. How are you today, Master [MC.name]? *blush*"
-    sill "哦，呃，抱歉。 [MC.name]主人，你今天好吗？ *脸红*"
+    sill "哦，呃，抱歉。 [MC.name]，你今天好吗？ *脸红*"
 
 # game/BKchapter3.rpy:4648
 translate schinese c3_narika_MU_class_c9aab6ca:
@@ -11068,7 +11068,7 @@ translate schinese c3_narika_MU_class_6edcb485:
 translate schinese c3_narika_MU_class_4b7ab70c:
 
     # "Suza" "It's that girl! She's trouble, I should have known something was off when she failed to cast the simplest telekinesy spell..."
-    "苏莎" "就是那个女孩！她是个捣蛋鬼，当她未能施展最简单的心灵遥感咒语时，我就应该知道出了什么问题..."
+    "苏莎" "就是那个女孩！她是个捣蛋鬼，当她未能施展最简单的心灵感应咒语时，我就应该知道出了什么问题..."
 
 # game/BKchapter3.rpy:5501
 translate schinese c3_narika_MU_class_0f4f76da:
@@ -15166,7 +15166,7 @@ translate schinese c3_narika_captured_0b386991:
 translate schinese c3_narika_captured_304b09f0:
 
     # narika "Noooo, no, wait!!! [dim]... Master [MC.name]! Don't leave me with that crazy w-witch!"
-    narika "不不不，等等！！！ [dim]...[MC.name]主人！别让我和那个疯狂的女巫婆在一起！"
+    narika "不不不，等等！！！ [dim]...[MC.name]！别让我和那个疯狂的女巫婆在一起！"
 
 # game/BKchapter3.rpy:7392
 translate schinese c3_narika_captured_d92e7d53:
@@ -27244,7 +27244,7 @@ translate schinese haruka_broken_391eb897:
 translate schinese haruka_broken_858aedb5:
 
     # haruka blush "Hello, Master [MC.name]."
-    haruka blush "您好，[MC.name]主人。"
+    haruka blush "您好，[MC.name]。"
 
 # game/BKchapter3.rpy:13394
 translate schinese haruka_broken_a744318f:
@@ -27682,7 +27682,7 @@ translate schinese haruka_broken_6d3a3a06:
 translate schinese haruka_broken_e70e8e0e:
 
     # haruka "Ooooh... Master [MC.name]..."
-    haruka "噢...[MC.name]主人..."
+    haruka "噢...[MC.name]..."
 
 # game/BKchapter3.rpy:13590
 translate schinese haruka_broken_35faeb4e:
@@ -28480,19 +28480,19 @@ translate schinese haruka_broken_a8ef4bc3:
 translate schinese haruka_broken_9f0a3688:
 
     # haruka sad "(So this is my life, now... I wonder if I can get used to it.)"
-    haruka sad "（所以这就是我今后的生活，现在......我不知道我是否能习惯它。）"
+    haruka sad "（这就是我今后的生活了吗......不知道我是否能习惯它。）"
 
 # game/BKchapter3.rpy:13985
 translate schinese acquire_ninja_50abf3d7:
 
     # girl.char "B-But Master! There is no room in the brothel for me..."
-    girl.char "但、但是主人！青楼已经没有房间给我住了..."
+    girl.char "但、但是主人！青楼里已经没有空房间给我住了..."
 
 # game/BKchapter3.rpy:13988
 translate schinese acquire_ninja_94f24145:
 
     # you "You should go to a pen at the farm."
-    you "你应该去农场的地牢。"
+    you "你可以去农场的房间先对付两天。"
 
 # game/BKchapter3.rpy:13990
 translate schinese acquire_ninja_6f025e90:
@@ -28504,19 +28504,19 @@ translate schinese acquire_ninja_6f025e90:
 translate schinese acquire_ninja_d65a119e:
 
     # you "Damn, the farm's pens are full at the moment..."
-    you "妈的，现在农场的地牢都满了..."
+    you "妈的，就连农场的地牢都满了..."
 
 # game/BKchapter3.rpy:14004
 translate schinese acquire_ninja_21a047c9:
 
     # gizel "I'll keep her around to do chores. Talk to me when you are ready to accomodate her."
-    gizel "我可以把她留在身边做家务。当你准备好收留她时就来找我。"
+    gizel "我可以把她留在身边做家务。当你准备好收留她时再来找我。"
 
 # game/BKchapter3.rpy:14008
 translate schinese acquire_ninja_55a53406:
 
     # "Once you have room for [girl.name], click on Gizel's portrait at the {b}Farm{/b} to recover her."
-    "一旦您有足够的空间容纳 [girl.name]，请点击{b}农场{/b}中吉泽尔的肖像来找回她。"
+    "如果您有房间提供给[girl.name]，请点击{b}农场{/b}中吉泽尔的头像把她接回去。"
 
 # game/BKchapter3.rpy:14019
 translate schinese acquire_ninja_98be9142:
@@ -28536,7 +28536,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:190
     old "I found hints about Haruka"
-    new "我找到了关于遥感的线索"
+    new "我找到了关于遥的线索"
 
     # game/BKchapter3.rpy:214
     old "Who do you want to ask [npc.name] about?"
@@ -28556,7 +28556,7 @@ translate schinese strings:
 
     # game/BKchapter3.rpy:214
     old "Ask about the elemental-proof cells"
-    new "询问有关元素增幅密室的信息"
+    new "询问有关元素增幅密室的事宜"
 
     # game/BKchapter3.rpy:331
     old "Sure (pay 1,000 gold)"

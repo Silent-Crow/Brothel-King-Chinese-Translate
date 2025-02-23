@@ -1588,7 +1588,7 @@ translate schinese strings:
 
     # game/BKscreens.rpy:6205
     old ")\n(Active)"
-    new ")\n(激活)"
+    new ")\n(已激活)"
 
     # game/BKscreens.rpy:6213
     old "(Active)"
